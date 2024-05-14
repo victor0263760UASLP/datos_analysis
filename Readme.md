@@ -469,10 +469,10 @@ return x;
  
 
  ``` 
-## Formulita
+## generator_array
 
 
-Para cargar  en c el programa que se llama formulita primero podemos importar las dos librerias fundamentales para extraer datos  en Python de la siguiente manera.
+Para cargar  en c el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos  en Python de la siguiente manera.
 ```Python
 import ctypes  #importamos ctypes  
 import numpy as np #importamos numpy que nos facilita la conversion de datos
