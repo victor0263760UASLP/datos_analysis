@@ -123,8 +123,8 @@ Podemos importar ctypes, cuya biblioteca es util para importar codigo que no sea
 #Asignamos  el file  o el path de nuestro archivo .so
 
 #Como en el ejemplo:
+file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 
-file = ("/home/jinzo/Desktop/Victorrivera__NESCGLE/victor_fluidos/nueva1/numerosenteros.so")  # Direction of the path.
 ```
 Asignamos un nombre aleatorio, en donde se pueda  definir  numeroseneros.
 
@@ -275,7 +275,7 @@ return sum ;
 
 Tambien podemos ver en el ejemplo  un file o un path de nuestro archivo de la siguiente manera.
 ```Python
-file = ("/home/jinzo/Desktop/Victorrivera__NESCGLE/victor_fluidos/nueva1/funcion2_suma.so")  # Direction of the path.
+file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path. # Direction of the path.
 
 ``` 
 
@@ -391,13 +391,13 @@ import numpy as np   #importamos numpy
 Podemos cargar la biblioteca de muchas maneras distinas una de ellas en cargando el archivo .so  que se encuentra en la misma biblioteca.
 ```Python
 # Cargar la biblioteca compartida
-#funcion_array = ctypes.CDLL('./funcion_array.so')
+#funcion_array = ctypes.CDLL('./Archivo.so')
 #Por esta ocasión definimos el Path de nuestro archivo, la localización del archivo .so
-file = ("/home/jinzo/Desktop/Victorrivera1__NESCGLE/victor_fluidos/nueva1/funcion3_array.so")  # Direction of the path
+file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 ``` 
 Aqui hay otro ejemplo de la dirección  de nuestro Path almacenado en otra dirección.
 ```Python
-#file = ("/home/fluidos/fluidos_structures/funcion2_array.so")  # Direction of the path.
+file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 #Podemos definir un nombre para  cargar nuestro archivo mediante la función ctypes.
 funcion_array=ctypes.CDLL(file) 
 ```
@@ -482,7 +482,7 @@ import numpy as np #importamos numpy que nos facilita la conversion de datos
 Posteriormente cargamos el archivo o Path  donde podemos encontrar nuestro archivo .so como podemos ver en el ejemplo.
 Cargar la biblioteca compartida.
 ```Python
-file =("/home/jinzo/Desktop/Victorrivera2__NESCGLE/victor_fluidos/nueva1/Array_string1.so")
+file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 ```
 
 
