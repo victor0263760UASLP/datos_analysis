@@ -469,7 +469,7 @@ return x;
  
 
  ``` 
-## Generator_array
+## Generator_array.py
 
 
 Para cargar  en c el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos  en Python de la siguiente manera.
