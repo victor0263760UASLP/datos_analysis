@@ -583,7 +583,7 @@ Posteriormente agregamos la palabra siguiente para que se genere nuestro archivo
 ```makefile 
 Lo podemos definir de la siguiente manera gcc funciona para archivos .c  y shared funciona para compartir,toma el archivo tipo  c y lo comvierte a un archivo  .so que se pueda leer con Python.
 
-gcc -fPIC -shared -o algo.c otracosa.so  otracosa.h
+gcc -fPIC -shared -o algo.c otracosa.so  
  
 
   ``` 
@@ -602,7 +602,7 @@ SHELL := /bin/bash
 c_compiler = gcc
 ``` 
 Añadiendo una leyenda en ese caso funcion2_suma que genera archivo.o .
-En donde toma los 3 archivos  genera archivo .so y oma el archivo .c y el archivo.h
+En donde toma los 3 archivos  genera archivo .so y toma el archivo .c y el archivo.h
 ```makefile 
 funcion2_suma : funcion_array.o
 	gcc -fPIC -shared -o  funcion3_array.so  funcion_array.c funcion_array.h
