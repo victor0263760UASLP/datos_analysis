@@ -40,7 +40,7 @@ Ahora estamos listos para crear nuestros scripts  de c, generar el archivo .so  
 
  
 
-## implementación  
+## Implementación  
 
  
 
