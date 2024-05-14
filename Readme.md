@@ -432,7 +432,7 @@ sum_array(a, b, resultado, len(a))#len (a) aplicada  a la funcion  ayuda a regre
  ## Ejemplo 5
 
 
- ## Formulita .c
+ ## Generator_array .c
 
 
 
