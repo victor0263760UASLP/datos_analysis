@@ -58,9 +58,8 @@ Después puedo crear un Makefile que me pueda imprimir el archivo .so de manera 
 
  
 
-## Programas básicos fundamentales: 
+## Programas  fundamentales c y python : 
 
-1.- Crear una  función en c de la más básica a la más compleja, para posteriormente administrarla con Python. 
 
  
 
@@ -84,11 +83,12 @@ la función es de acuerdo a la siguiente, primero vamos a agregar las librerías
 #include <stdlib.h>// include library c.
 #include <stdio.h> //include functions of the library  c.
 
-
+ ``` 
  
 
 Posteriormente agregamos el código correspondiente de la función que funciona con enteros.
 La función realiza la operacion de sumar dos variables, la cual podemos determinarla con la variable sum.
+```c 
 int suma(  int  a,  int b,  int sum){
  
 
@@ -116,44 +116,44 @@ deacuerdo al siguiente codigo.
 #codigo que ayuda  para sumar dos numeros enteros desde la funcion de  numeros enteros
 import ctypes as cl
 
-
+```
 
 #Podemos importar ctypes, cuya biblioteca es util para importar codigo que no sea de su origen.
-
+```Python
 #Asignamos  el file  o el path de nuestro archivo .so
 
 #Como en el ejemplo:
 
 file = ("/home/jinzo/Desktop/Victorrivera__NESCGLE/victor_fluidos/nueva1/numerosenteros.so")  # Direction of the path.
+```
+Asignamos un nombre aleatorio, en donde se pueda  definir  numeroseneros.
 
-#Asignamos un nombre aleatorio, en donde se pueda  definir  numeroseneros.
+Como en la siguiente asignación.
 
-#Como en la siguiente asignación.
-
-
+```Python
 numerosenteros=cl.CDLL(file)
 
 
-
+```
 #En el script python definimos el valor de nuestras variables.
 
 #Como en el siguiente ejemplo para la suma de dos numeros enteros.
-
+```Python
 
 a = 8 #Assigment of variable a
 b = 10
 
-
-#Vamos a imprimir con la funcion type para numeros enteros como podemos ver en el ejemplo.
-
+```
+Vamos a imprimir con la funcion type para numeros enteros como podemos ver en el ejemplo.
+```Python
 
 print(type(numerosenteros))  # print of the type of function.
 
+```
 
-
-#Posteriormente definimos el archivo que tenemos cargado en donde definimos toda esa sintaxis  del archivo tomamos solo la función suma con las #variables correspondientes  asignadas como a y b.
-#De la siguiente manera:
-
+Posteriormente definimos el archivo que tenemos cargado en donde definimos toda esa sintaxis  del archivo tomamos solo la función suma con las variables correspondientes  asignadas como a y b.
+De la siguiente manera:
+```Python
 print(numerosenteros.suma(a,b))#print the variables
 ```
 
