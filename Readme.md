@@ -588,7 +588,7 @@ gcc -fPIC -shared -o algo.c otracosa.so
 
   ``` 
 
-## makefile 
+## Makefile 
 
 
 
