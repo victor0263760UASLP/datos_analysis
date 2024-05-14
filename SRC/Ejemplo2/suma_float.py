@@ -7,13 +7,7 @@ funcion2_suma=ctypes.CDLL(file)   # importar funcion2_suma de file
 #funcion2_suma=cl.CDLL(file)  #Add the file path in CDLL with cl.
 #funcion2_suma.argtypes=[ctypes.c_float,ctypes.c_float]
 
-#d=(c_double *1)(4.23)
-#numpy_d=array(d)
-#numpy_d.dtype
-#dtype(’float64’)
-#numpy_d/1.35
-#array([ 3.13333333])
-#funcion2_suma.printf.argtypes=[a_float, b_float]
+
 
 a = 7.22001231364165885261456154715154587498461465415747487946535125415313514   #Assigment of variable a
 b = 10.2522564161451457145714515415741578144751581487549746165116161651561541   #Assigment of  variable b.
