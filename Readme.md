@@ -38,8 +38,6 @@ Ahora estamos listos para crear nuestros scripts  de c, generar el archivo .so  
 
  
 
- 
-
 ## Implementación  
 
  
@@ -53,17 +51,34 @@ Después puedo generar un archivo .so e utilizarlo en Python para importarlo e i
 Después puedo crear un Makefile que me pueda imprimir el archivo .so de manera que se genere la función array suma y también añadir el archivo h de la librería de nuestra función en c. 
 
  
+## Creación de Archivo .so porque es muy importante? 
 
  
+## Qué es un archivo.so? 
 
+Se utiliza para proporcionar acceso a bibliotecas compartidas a un programa determinados cuando se inician. (3) 
+En este caso podemos utilizar un archivo C  a  un archivo.so y  esto  nos permite administrarlo con Python.
+ 
+
+ 
+El archivo .so se puede crear de la siguiente manera:
+
+1. En la terminal linux(Ubuntu) o en Visual Sudio Code ingresamos a su dirección donde se encuentra alamacenado nuestro archivo.c
+Posteriormente agregamos la palabra siguiente para que se genere nuestro archivo.so , anexando como ejemplo el programa en c que se llama algo y  para el nombre de nuestro archivo .so podemos escribir el mismo nombre  del archivo .c  u otro que se elija.
+```makefile
+
+Lo podemos definir de la siguiente manera gcc funciona para archivos .c  y shared funciona para compartir,toma el archivo tipo  c y lo comvierte a un archivo  .so que se pueda leer con Python.
+
+gcc -fPIC -shared -o algo.c otracosa.so  
+ 
+
+  ``` 
  
 
 ## Programas  fundamentales c y python : 
 
 
- 
 
- 
 ## Ejemplo 1
 
 
@@ -72,9 +87,6 @@ Después puedo crear un Makefile que me pueda imprimir el archivo .so de manera 
 
 Primero vamos a buscar crear un programa que sume dos números en nuestro programa añadiendo las librerías fundamentales en c. 
 
- 
-
- 
 
 Una de las características más importantes en el uso de sumar variables por lo cual sumamos a + b como variables enteras, el archivo se llama numerosenteros.c.  
 
@@ -104,7 +116,6 @@ return sum ;
 //return(sum);
 
 }
-
 
  ``` 
 
@@ -175,8 +186,6 @@ print(numerosenteros.suma(a,b))#print the variables
  float suma(  float  a,  float b,  float sum){
  
 ``` 
-
-
 Posteriormente podemos añadir la suma de los dos números flotantes. 
 
  ```c 
@@ -184,9 +193,6 @@ sum = a + b;
 ``` 
 ```c 
 //Por ultimo  agregamos la  variable return que nos permite regresar el valor de nuestra función 
-
- 
-
 
 return sum ;  
 //return(sum);
@@ -262,7 +268,6 @@ return sum ;
 //return(sum);
 
 }
-
 
  ``` 
  ## Archivo  suma_doubles.py
@@ -564,29 +569,10 @@ print( convertir_arreglo)
 
  ``` 
 
-## Creación de Archivo .so porque es muy importante? 
-
- 
-## Qué es un archivo.so? 
-
-Se utiliza para proporcionar acceso a bibliotecas compartidas a un programa determinados cuando se inician. (3) 
-En este caso podemos utilizar un archivo C  a  un archivo.so y  esto  nos permite administrarlo con Python.
- 
-
- 
-El archivo .so se puede crear de la siguiente manera:
-
-1. En la terminal linux(Ubuntu) o en Visual Sudio Code ingresamos a su dirección donde se encuentra alamacenado nuestro archivo.c
-Posteriormente agregamos la palabra siguiente para que se genere nuestro archivo.so , anexando como ejemplo el programa en c que se llama algo y  para el nombre de nuestro archivo .so podemos escribir el mismo nombre  del archivo .c  u otro que se elija.
 
 
-```makefile 
-Lo podemos definir de la siguiente manera gcc funciona para archivos .c  y shared funciona para compartir,toma el archivo tipo  c y lo comvierte a un archivo  .so que se pueda leer con Python.
 
-gcc -fPIC -shared -o algo.c otracosa.so  
- 
 
-  ``` 
 
 ## Makefile 
 
@@ -616,9 +602,6 @@ clear:
  
 
  
-
-
-
  
 
 ## Conclusión: 
