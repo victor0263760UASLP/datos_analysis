@@ -63,7 +63,7 @@ En este caso podemos utilizar un archivo C  a  un archivo.so y  esto  nos permit
  
 El archivo .so se puede crear de la siguiente manera:
 
-1. En la terminal linux(Ubuntu) o en Visual Sudio Code ingresamos a su dirección donde se encuentra alamacenado nuestro archivo.c
+1. En la terminal linux(Ubuntu) o en Visual Sudio Code ingresamos a su dirección donde se encuentra almacenado nuestro archivo.c
 Posteriormente agregamos la palabra siguiente para que se genere nuestro archivo.so , anexando como ejemplo el programa en c que se llama algo y  para el nombre de nuestro archivo .so podemos escribir el mismo nombre  del archivo .c  u otro que se elija.
 ```makefile
 
@@ -281,7 +281,7 @@ return sum ;
  ```
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
-Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
+Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_doubles.so suma_doubles.c
  ## Archivo  suma_doubles.py
 ```Python
@@ -291,7 +291,7 @@ Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_doubles.so 
 ``` 
 
 
-Tambien podemos ver en el ejemplo  un file o un path de nuestro archivo de la siguiente manera.
+También podemos ver en el ejemplo  un file o un path de nuestro archivo de la siguiente manera.
 ```Python
 file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path. # Direction of the path.
 
@@ -332,7 +332,7 @@ n_suma.restype = ctypes.c_double  #toma la funcion de n_suma restype
 
 ``` 
 
-#Por ultimo imprimimos la suma de nuestras dos variables tipo doubles.
+#Por último imprimimos la suma de nuestras dos variables tipo doubles.
 ```Python
 print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
 
@@ -391,7 +391,7 @@ for (int i = 0; i < 10; i++) {  // realiza un ciclo for  que empieza en cero per
 
 
 
-Por ultimo es muy importante agregar el return de nuestro resultado para posteriormente utilizarlo de la siguiente manera.
+Por último es muy importante agregar el return de nuestro resultado para posteriormente utilizarlo de la siguiente manera.
 ```c 
 
 }
@@ -403,6 +403,7 @@ return resultado[10]; // regresa el resulado de las iteraciones
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
+
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
 ```Python
 
@@ -493,8 +494,9 @@ return x;
  ```
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
-Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
+Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
+
+Dirección:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
 ## Generator_array.py
 
 
@@ -560,7 +562,7 @@ arreglo = Array_string1.array_float_string(x0, xn, n)
 
 
 
-Un paso muy importante es apoyarnos de la libreria de numpy  en donde definimos un nombre que defina las ieraciones de nuestro  arreglos.
+Un paso muy importante es apoyarnos de la libreria de numpy  en donde definimos un nombre que defina las ieraciones de nuestros  arreglos.
 ```Python
 #utilizamos el arreglo de ctypes a numpy  que vaya iterando en el rango de (n+1)
 	convertir_arreglo= np.array([arreglo[i] for i in range(n+1)])
@@ -599,8 +601,6 @@ print( convertir_arreglo)
 
 
 
- 
-
 Para el caso del makefile tenemos que escribir el archivo de la siguiente forma para posteriormente. 
 Podemos indicar de manera formal que  nuestro archivo  se pueda generar de manera automatica de la siguiente manera.
 Eligiendo el tipo de compilador  que en nuestro caso es gcc por que va a tomar archivos tipo c.
@@ -615,7 +615,7 @@ funcion2_suma : funcion_array.o
 	gcc -fPIC -shared -o  funcion3_array.so  funcion_array.c funcion_array.h
 
 ``` 
-Por ultimo limpia los archivos creados .o con la función rm
+Por último limpia los archivos creados .o con la función rm
 ```makefile 
 clear:
 	rm funcion_array.o
