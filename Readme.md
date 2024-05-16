@@ -6,7 +6,7 @@
 
 ## Fundamentos de nociónes de funciónes en c 
 
-Una de las características más importantes es la manipulación de diversos archivos por la cual es muy útil en esa ocasión utilizar, programar en c y manipularlos con Python. 
+Una de las características más importantes es la manipulación de diversos archivos por la cual es muy útil en esta ocasión utilizar, programar en c y manipularlos con Python. 
 
 Por esa razón podemos ordenar nuestro código de la siguiente forma en la que se describe a continuación la importancia de c y Python comenzamos con la pregunta. 
 
