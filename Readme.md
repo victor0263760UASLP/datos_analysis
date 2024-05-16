@@ -213,7 +213,8 @@ Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la termin
 
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_float.so suma_float.c
  ## Archivo  suma_float.py
-
+Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  suma_float.py 
+deacuerdo al siguiente codigo.
 ```Python
 #Ahora vamos a necesitar un programa  que se llama suma_float.
 #Primero importamos ctypes una biblioteca fundamental para extraer datos.
@@ -286,7 +287,13 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_doubles.so suma_doubles.c
+
+
+Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  suma_doubles.py 
+deacuerdo al siguiente codigo.
  ## Archivo  suma_doubles.py
+
+ 
 ```Python
 #En el caso de la suma de numeros  tipo double podemos definir de la siguiente manera  importando la biblioteca ctypes.
 #import ctypes # import ctypes with extension cl.
@@ -408,6 +415,9 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
+
+Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar suma_arreglos_enteros .py 
+deacuerdo al siguiente codigo.
 ```Python
 
 #Para este caso de un arreglo con 10 valores podemos definir las bibliotecas de la siguiente manera importando numpy podemos definir cada una de #nuestras librerias de la siguiente manera.
@@ -450,6 +460,9 @@ resultado = np.zeros(10, dtype=np.intc)  #determina   la variable resultado con 
 
 Donde almacenamos el nombre de nuestra función e indicando los argumentos de la siguiente manera , e indicando los valores tipo int, e indicando el numero de argumentos con len(a).
 Llamamos  a la función  que tenemos   almacenada de la funcion en c para imprimir el resultado.
+
+Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar Generator_array .py 
+deacuerdo al siguiente codigo.
 ```Python
 sum_array(a, b, resultado, len(a))#len (a) aplicada  a la funcion  ayuda a regresar el numero de elementos de numeros reales.
 
@@ -501,10 +514,12 @@ Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la termi
 
 
 Dirección:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
+Para cargar  en c el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos en Python de la siguiente manera.
+
 ## Generator_array.py
 
 
-Para cargar  en c el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos  en Python de la siguiente manera.
+
 ```Python
 import ctypes  #importamos ctypes  
 import numpy as np #importamos numpy que nos facilita la conversion de datos
