@@ -658,11 +658,7 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 ## Fuentes consultadas: 
 
  
-
- [Abrir en nueva página][Readme.md]
-
-[Readme.md]: https://visualstudio.microsoft.com/. 
- {:target="_blank"}
+[Abrir en nueva página](https://visualstudio.microsoft.com/. ){:target="_blank"}
 
 
 
