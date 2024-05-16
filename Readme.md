@@ -639,7 +639,7 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 
 3) https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/programacion-con-c/ 
 
- 
+ [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
 
 4) https://www.python.org/downloads/. 
 
