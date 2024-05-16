@@ -204,7 +204,7 @@ return sum ;
 
  ```
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
+Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_float.so suma_float.c
  ## Archivo  suma_float.py
 
 ```Python
@@ -275,7 +275,7 @@ return sum ;
 
  ```
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
+Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_doubles.so suma_doubles.c
  ## Archivo  suma_doubles.py
 ```Python
 #En el caso de la suma de numeros  tipo double podemos definir de la siguiente manera  importando la biblioteca ctypes.
@@ -394,7 +394,7 @@ return resultado[10]; // regresa el resulado de las iteraciones
 
 ```
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
+Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
 ```Python
 
 #Para este caso de un arreglo con 10 valores podemos definir las bibliotecas de la siguiente manera importando numpy podemos definir cada una de #nuestras librerias de la siguiente manera.
@@ -483,7 +483,7 @@ return x;
 
  ```
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
+Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
 ## Generator_array.py
 
 
