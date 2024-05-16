@@ -118,7 +118,7 @@ return sum ;
 }
 
  ```
-PROBLEMS      OUTPUT       DEBUG CONSOLE    TERMINAL    PORTS
+PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 
 
