@@ -657,16 +657,23 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 
 ## Fuentes consultadas: 
 
+
  
-[enlace en línea](http://www.limni.net)
 
 
 1) https://visualstudio.microsoft.com/. 
-
+[Ir a Google](https://www.google.com)
  
 
-2) https://www.file-extension.info/es/format/so 
-
+2) https://www.file-extension.info/es/format/so
+<a id="miEnlace" href="#">HtmlMasters</a>
+<script>
+     const enlace = document.getElementById("https://www.file-extension.info/es/format/so");
+     enlace.href="#";
+     enlace.addEventListener('click', function(){
+        window.open('https://htmlmasters.tech','_blank');
+     });
+</script> 
  
 
 3) https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/programacion-con-c/ 
