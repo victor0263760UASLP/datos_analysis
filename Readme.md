@@ -641,5 +641,9 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 
 
 4) https://www.python.org/downloads/. 
-
+> [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+- [(Text1 | Example1 )](../articles/folder/article-name1.md)
+- [(Text1 | Example2 )](../articles/folder/article-name2.md)
+- [(Text2 | Example3 )](../articles/folder/article-name3.md)
+- [(Text2 | Example4 )](../articles/folder/article-name4.md)
  
