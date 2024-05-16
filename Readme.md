@@ -659,7 +659,11 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 
  
 
- [Visual Studio](https://visualstudio.microsoft.com/){:target="_blank"}
+ [Abrir en nueva página][Readme.md]
+
+[Readme.md]: https://visualstudio.microsoft.com/. 
+ {:target="_blank"}
+
 
 
 1) https://visualstudio.microsoft.com/. 
