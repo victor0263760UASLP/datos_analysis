@@ -209,12 +209,14 @@ return sum ;
  ```
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
-Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:ç
+Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_float.so suma_float.c
- ## Archivo  suma_float.py
+User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_float.so suma_float.c
+
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  suma_float.py 
-deacuerdo al siguiente codigo.
+deacuerdo al siguiente código.
+ ## Archivo  suma_float.py
+
 ```Python
 #Ahora vamos a necesitar un programa  que se llama suma_float.
 #Primero importamos ctypes una biblioteca fundamental para extraer datos.
