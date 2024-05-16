@@ -119,7 +119,10 @@ return sum ;
 
  ```
 PROBLEMS      OUTPUT       DEBUG CONSOLE    TERMINAL    PORTS
-Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
+
+
+
+Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
 ## Archivo  sumaenteros.py
 
