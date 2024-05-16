@@ -658,9 +658,9 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 ## Fuentes consultadas: 
 
  
-[Abrir en nueva página](https://visualstudio.microsoft.com/. ){:target="_blank"}
 
 
+<a href="https://www.file-extension.info/es/format/so " target="_blank" rel="noopener">Haz clic aquí</a>
 
 1) https://visualstudio.microsoft.com/. 
 
