@@ -206,6 +206,8 @@ return sum ;
 
 
  ```
+PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
+
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_float.so suma_float.c
  ## Archivo  suma_float.py
@@ -277,6 +279,8 @@ return sum ;
 }
 
  ```
+PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
+
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_doubles.so suma_doubles.c
  ## Archivo  suma_doubles.py
@@ -396,6 +400,8 @@ return resultado[10]; // regresa el resulado de las iteraciones
 
 
 ```
+PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
+
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
 ```Python
@@ -485,6 +491,8 @@ return x;
  
 
  ```
+PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
+
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
 ## Generator_array.py
