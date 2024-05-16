@@ -514,6 +514,8 @@ Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la termi
 
 
 Dirección:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
+
+
 Para cargar  en c el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos en Python de la siguiente manera.
 
 ## Generator_array.py
@@ -543,7 +545,7 @@ Array_string1 = ctypes.CDLL(file)  #carga la el archivo file  a ctypes.
 Las variables que vamos asignar para el funcionamiento de nuestro programa se desarrollan de la siguiente manera aunque las variables pueden determinarse al inicio o al final de nuestro programa.
 
 
-Dentro de algunas recomendaciones podemos destacar el numero de iteraciones que  depende de la memoria del computador, en este caso se realizo la iteración y para   que funcionara de manera optima llego hasta un maximo  de  100000000.
+Dentro de algunas recomendaciones podemos destacar el numero de iteraciones que  depende de la memoria del computador, en este caso se realizo la iteración y para que funcionara de manera optima llego hasta un maximo  de  100000000.
 Algunos ejemplos de asignación de valores  a las variables se pueden mostrar a coninuación.
 
 
@@ -634,7 +636,7 @@ funcion2_suma : funcion_array.o
 	gcc -fPIC -shared -o  funcion3_array.so  funcion_array.c funcion_array.h
 
 ``` 
-Por último limpia los archivos creados .o con la función rm
+Por último limpia los archivos creados .o con la función rm y podemos abrirlo con la función make.
 ```makefile 
 clear:
 	rm funcion_array.o
