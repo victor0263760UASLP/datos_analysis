@@ -658,9 +658,8 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 ## Fuentes consultadas: 
 
  
+[enlace en línea](http://www.limni.net)
 
-
-<a href="https://www.file-extension.info/es/format/so " target="_blank" rel="noopener">Haz clic aquí</a>
 
 1) https://visualstudio.microsoft.com/. 
 
