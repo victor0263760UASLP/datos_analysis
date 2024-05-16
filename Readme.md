@@ -124,7 +124,7 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
+Dirección:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
 ## Archivo  sumaenteros.py
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  sumaenteros.py 
@@ -271,7 +271,7 @@ Agregamos ahora la función que nos va a permitir la suma  de dos numeros flotan
 sum = a + b;
 
 ```  
-Por ultimo  agregamos la  variable return que nos permite regresar el valor de nuestra función 
+Por último  agregamos la  variable return que nos permite regresar el valor de nuestra función 
 
  ```c 
 
@@ -659,7 +659,8 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 
  
 
- 
+ [Visual Studio](https://visualstudio.microsoft.com/){:target="_blank"}
+
 
 1) https://visualstudio.microsoft.com/. 
 
