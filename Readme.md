@@ -44,7 +44,7 @@ Ahora estamos listos para crear nuestros scripts  de c, generar el archivo .so  
 
 Podemos implementar una función para un sistema de arreglos en donde sumamos dos arreglos e imprimimos la suma de los arreglos llamando una función para posteriormente con el programa Python llamarla con ctypes. 
 
-Después puedo generar un archivo .so e utilizarlo en Python para importarlo e imprimir los arreglos en este caso puedo generar un conjunto de archivos. 
+Después podemos generar un archivo .so e utilizarlo en Python para importarlo e imprimir los arreglos en este caso podemos generar un conjunto de archivos. 
 
  
 
