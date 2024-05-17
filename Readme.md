@@ -50,7 +50,7 @@ Después podemos generar un archivo .so e utilizarlo en Python para importarlo e
 
 Después puedo crear un Makefile que me pueda imprimir el archivo .so de manera que se genere la función array suma y también añadir el archivo h de la librería de nuestra función en c. 
 
- 
+
 ## Creación de Archivo .so porque es muy importante? 
 
  
@@ -80,17 +80,20 @@ gcc -fPIC -shared -o algo.c otracosa.so
 
 
 ## Ejemplo 1
+Primero vamos hacer algo muy importarte deseamos sumar dos numeros, podemos hacer la suma de a y b y lo hacemos  en el lenguaje de programación c buscando las librerias que me permitan usarlas  todas las funciones del mismo , en donde hacemos una función que permita almacenar cada una de las variables involucradas en la suma  y claro un return para después utilizar el valor de la función.
 
-
+Podemos tomar en cuenta  al hacer el archivo.c que se almacene en la misma carpeta en donde vamos a generar cada uno de nuestros archivos .
+Como podemos ver a continuación tenemos el archivo.c. te invito a utilizarlo puedes implementarlo como se muestra a continuación.
 
 ## Sumar dos números enteros (numerosenteros.c)
 
 Primero vamos a buscar crear un programa que sume dos números en nuestro programa añadiendo las librerías fundamentales en c. 
 
 
-Una de las características más importantes en el uso de sumar variables por lo cual sumamos a + b como variables enteras, el archivo se llama numerosenteros.c.  
+Una de las características más importantes en el uso de sumar variables tenemos en consideracion la suma de las variables  a + b como variables enteras, el archivo se llama numerosenteros.c
 
-la función es de acuerdo a la siguiente, primero vamos a agregar las librerías correspondientes a c de la siguiente manera.
+
+La función se establce de acuerdo a la siguiente forma, primero vamos a agregar las librerías correspondientes a c de la siguiente manera.
 ```c 
 #include <stdlib.h>// include library c.
 #include <stdio.h> //include functions of the library  c.
@@ -99,7 +102,7 @@ la función es de acuerdo a la siguiente, primero vamos a agregar las librerías
  
 
 Posteriormente agregamos el código correspondiente de la función que funciona con enteros.
-La función realiza la operacion de sumar dos variables, la cual podemos determinarla con la variable sum.
+La función realiza la operacion de sumar dos variables, la cual podemos determinarla con la variable sum, podemos ver que hace un return  del valor de nuestra función.
 ```c 
 int suma(  int  a,  int b,  int sum){
  
@@ -108,7 +111,7 @@ sum = a + b;
 
  
 
-//Posteriormente podemos agregar de manera compacta la suma con la varible sum , además de agregar el return para que regrese nuestra función de la 
+//Posteriormente podemos agregar de manera compacta la suma con la variable sum , además de agregar el return para que regrese nuestra función de la 
  //siguiente manera.
 
 
@@ -118,6 +121,7 @@ return sum ;
 }
 
  ```
+
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 
@@ -288,7 +292,7 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_doubles.so suma_doubles.c
+User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_doubles.so suma_doubles.c
 
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  suma_doubles.py 
@@ -416,7 +420,7 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
-Direccion:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
+User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar suma_arreglos_enteros .py 
 deacuerdo al siguiente codigo.
@@ -515,7 +519,7 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
 
-Dirección:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
+User :~/Path_to_your_files$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
 
 
 Para cargar  en c el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos en Python de la siguiente manera.
@@ -614,10 +618,6 @@ print( convertir_arreglo)
  
 
  ``` 
-
-
-
-
 
 
 ## Makefile 
