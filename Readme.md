@@ -124,7 +124,7 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
-Dirección:~/Desktop/file/Archivo/carpeta$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
+User :~/Path_to_your_files$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
 ## Archivo  sumaenteros.py
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  sumaenteros.py 
@@ -143,7 +143,7 @@ Podemos importar ctypes, cuya biblioteca es util para importar codigo que no sea
 file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 
 ```
-Asignamos un nombre aleatorio, en donde se pueda  definir  numeroseneros.
+Asignamos un nombre aleatorio, en donde se pueda  definir  numerosenteros.
 
 Como en la siguiente asignación.
 
@@ -161,14 +161,14 @@ a = 8 #Assigment of variable a
 b = 10
 
 ```
-Vamos a imprimir con la funcion type para numeros enteros como podemos ver en el ejemplo.
+Vamos a imprimir con la función type para numeros enteros;como podemos ver en el ejemplo.
 ```Python
 
 print(type(numerosenteros))  # print of the type of function.
 
 ```
 
-Posteriormente definimos el archivo que tenemos cargado en donde definimos toda esa sintaxis  del archivo tomamos solo la función suma con las variables correspondientes  asignadas como a y b.
+Posteriormente definimos el archivo que tenemos cargado donde se encuentra toda esa sintaxis  del archivo donde tomamos solo la función suma con las variables correspondientes  asignadas con a y b.
 De la siguiente manera:
 ```Python
 print(numerosenteros.suma(a,b))#print the variables
