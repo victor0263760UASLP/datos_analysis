@@ -679,7 +679,10 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
  
 [Abrir enlace en nueva página](https://www.google.com "Sitio de ejemplo" target="_blank")
 
-3) https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/programacion-con-c/ 
+3) https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/programacion-con-c/
+
+4) 
+<a href="www.file-extension.info/es/format/so" target="_blank">Texto del enlace</a>
 
 
-4) https://www.python.org/downloads/. 
+5) https://www.python.org/downloads/. 
