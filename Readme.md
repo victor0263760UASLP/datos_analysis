@@ -677,6 +677,7 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
      });
 </script> 
  
+[Abrir enlace en nueva página](https://www.google.com "Sitio de ejemplo" target="_blank")
 
 3) https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/programacion-con-c/ 
 
