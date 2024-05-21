@@ -1,4 +1,4 @@
-# Manual paso por paso de c a py  
+# Manual paso por paso de C a Py
 
  
 
