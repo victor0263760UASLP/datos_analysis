@@ -65,10 +65,10 @@ El archivo .so se puede crear de la siguiente manera:
 
 1. En la terminal linux(Ubuntu) o en Visual Sudio Code ingresamos a su dirección donde se encuentra almacenado nuestro archivo.c
 Posteriormente agregamos la palabra siguiente para que se genere nuestro archivo.so , anexando como ejemplo el programa en c que se llama algo y  para el nombre de nuestro archivo .so podemos escribir el mismo nombre  del archivo .c  u otro que se elija.
-```makefile
+
 
 Lo podemos definir de la siguiente manera gcc funciona para archivos .c  y shared funciona para compartir,toma el archivo tipo  c y lo comvierte a un archivo  .so que se pueda leer con Python.
-
+```makefile
 gcc -fPIC -shared -o algo.c otracosa.so  
  
 
