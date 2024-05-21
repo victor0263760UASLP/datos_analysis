@@ -123,14 +123,15 @@ return sum ;
  ```
 Ahora tenemos nuestro  codigo generado. podemos ingresar en la terminal  para encontrar nuestro archivo , ahora bien cuando sabemos que estamos en la dirección correcta, vamos a generar nuestro archivo.so  como ejemplo podemos ver la siguiente forma.
 
+
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-
+```Python
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
-
+```
 De esa manera podemos ver que nuestro archivo.so se generó y podemos pasar al suguiente paso, utilizar python para extraer los datos, lo cual podemos ver a continuación en el siguiente archivo.
 
 
@@ -224,10 +225,10 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 ```Python
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_float.so suma_float.c
-
+```
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  suma_float.py 
 deacuerdo al siguiente código.
-```
+
  ## Archivo  suma_float.py
 
 ```Python
@@ -300,9 +301,9 @@ return sum ;
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-
+```Python
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_doubles.so suma_doubles.c
-
+```
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  suma_doubles.py 
 deacuerdo al siguiente codigo.
@@ -428,9 +429,9 @@ return resultado[10]; // regresa el resulado de las iteraciones
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-
+```Python
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
-
+```
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar suma_arreglos_enteros .py 
 deacuerdo al siguiente codigo.
 ```Python
@@ -526,10 +527,10 @@ return x;
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-
+```Python
 
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
-
+```
 
 Para cargar  en c el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos en Python de la siguiente manera.
 
