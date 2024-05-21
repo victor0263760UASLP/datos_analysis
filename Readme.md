@@ -2,7 +2,6 @@
 
  
 
- 
 
 ## Fundamentos de nociónes de funciónes en c 
 
@@ -48,7 +47,7 @@ Después podemos generar un archivo .so e utilizarlo en Python para importarlo e
 
  
 
-Después puedo crear un Makefile que me pueda imprimir el archivo .so de manera que se genere la función array suma y también añadir el archivo h de la librería de nuestra función en c. 
+Después puedes crear un Makefile que me pueda imprimir el archivo .so de manera que se genere la función array suma y también añadir el archivo .h de la librería de nuestra función en c. 
 
 
 ## Creación de Archivo .so porque es muy importante? 
@@ -60,7 +59,6 @@ Se utiliza para proporcionar acceso a bibliotecas compartidas a un programa dete
 En este caso podemos utilizar un archivo C  a  un archivo.so y  esto  nos permite administrarlo con Python.
  
 
- 
 El archivo .so se puede crear de la siguiente manera:
 
 En la terminal linux(Ubuntu) o en Visual Sudio Code ingresamos a su dirección donde se encuentra almacenado nuestro archivo.c
