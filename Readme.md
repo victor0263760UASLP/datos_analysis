@@ -335,8 +335,8 @@ funcion2_suma=ctypes.CDLL(file)   # importar funcion2_suma de file
 
 Asignamos el valor de cada una de las varibales tipo double que vamos a sumar.
 ```Python
-a = 7.22001231364165885261456154715154587498461465415747487946535125415313514   #Assigment of variable a
-b = 10.2522564161451457145714515415741578144751581487549746165116161651561541   #Assigment of  variable b.
+a = 7.22001231364165885  #Assigment of variable a
+b = 10.2522564161451457   #Assigment of  variable b.
 
 
 ``` 
