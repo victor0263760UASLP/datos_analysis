@@ -186,11 +186,12 @@ print(numerosenteros.suma(a,b))#print the variables
 De esta forma sumamos dos variables y podemos tener el resultado  que veremos  impreso en pantalla.
 
 ## Ejemplo 2
+Podemos considerar para  realizar este programa priimero hacer un programa en lenguaje c que pueda sumar dos numeros solo que  en este caso podemos implementar sumar  2 numeros flotantes, podemos implementar este código de la siguiente manera como podemos ver a continuación , eligiendo dos variables para  realizar una función que me permita sumar las dos variables.
 
 ##  sumar dos numeros flotantes(suma_float.c)
  
 
-//Posteriormente para el siguiente programa se va a generar de acuerdo a números flotantes por lo cual también adjuntamos las librerías correspondientes para suma de números flotantes.
+Posteriormente para el siguiente programa se va a generar de acuerdo a números flotantes por lo cual también adjuntamos las librerías correspondientes para suma de números flotantes.
 
  ```c 
 #include <stdlib.h>// include library c.
@@ -203,7 +204,7 @@ De esta forma sumamos dos variables y podemos tener el resultado  que veremos  i
  float suma(  float  a,  float b,  float sum){
  
 ``` 
-Posteriormente podemos añadir la suma de los dos números flotantes, en este caso utilizamos una variable que se almacena como la suma de 2 variables tipo flotantes a y b  la cual se llama sum.
+Posteriormente podemos añadir la suma de los dos números flotantes, en este caso utilizamos una variable que se almacena como la suma de 2 variables tipo flotantes a y b  la cual se llama sum que va ayudar para almacenar  con la palabra return la sum.
 
  ```c 
 sum = a + b;
@@ -218,6 +219,8 @@ return sum ;
 
 
  ```
+## Generar el archivo .so a partir de un programa.c
+
 Ahora bien podemos tener almacenado el valor de sum que nos ayuda para utilizarlo posteriormente en python.
 Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
