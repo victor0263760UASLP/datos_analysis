@@ -55,7 +55,7 @@ Después puedes crear un Makefile que me pueda imprimir el archivo .so de manera
  
 ## Qué es un archivo.so? 
 
-Se utiliza para proporcionar acceso a bibliotecas compartidas a un programa determinados cuando se inician. (3) 
+Se utiliza para proporcionar acceso a bibliotecas compartidas a un programa determinado cuando se inician. (3) 
 En este caso podemos utilizar un archivo C  a  un archivo.so y  esto  nos permite administrarlo con Python.
  
 
