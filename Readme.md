@@ -182,6 +182,7 @@ De la siguiente manera:
 ```Python
 print(numerosenteros.suma(a,b))#print the variables
 ```
+De esta forma sumamos dos variables y podemos tener el resultado  que veremos  impreso en pantalla.
 
 ## Ejemplo 2
 
@@ -201,7 +202,7 @@ print(numerosenteros.suma(a,b))#print the variables
  float suma(  float  a,  float b,  float sum){
  
 ``` 
-Posteriormente podemos añadir la suma de los dos números flotantes. 
+Posteriormente podemos añadir la suma de los dos números flotantes, en este caso utilizamos una variable que se almacena como la suma de 2 variables tipo flotantes a y b  la cual se llama sum.
 
  ```c 
 sum = a + b;
@@ -216,6 +217,7 @@ return sum ;
 
 
  ```
+Ahora bien podemos tener alamacenado el valor de sum que nos ayuda para utilizarlo en 
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
