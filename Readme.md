@@ -67,7 +67,7 @@ Posteriormente agregamos la palabra siguiente para que se genere nuestro archivo
 
 Lo podemos definir de la siguiente manera gcc funciona para archivos .c  y shared funciona para compartir,toma el archivo tipo  c y lo comvierte a un archivo  .so que se pueda leer con Python.
 ```makefile
-gcc -fPIC -shared -o algo.c otracosa.so  
+gcc -fPIC -shared -o funcion.c funcion1.so  
  
 
   ``` 
