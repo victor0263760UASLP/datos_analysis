@@ -130,7 +130,8 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
-De esa manera podemos ver que nuestro archivo.so se genero y podemos pasar al suguiente paso, utilizar python para extraer los datos, lo cual podemos ver a continuación en el siguiente archivo.
+
+De esa manera podemos ver que nuestro archivo.so se generó y podemos pasar al suguiente paso, utilizar python para extraer los datos, lo cual podemos ver a continuación en el siguiente archivo.
 
 
 ## Archivo  sumaenteros.py
@@ -221,11 +222,12 @@ Ahora bien podemos tener alamacenado el valor de sum que nos ayuda para utilizar
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
-
+```Python
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_float.so suma_float.c
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  suma_float.py 
 deacuerdo al siguiente código.
+```
  ## Archivo  suma_float.py
 
 ```Python
