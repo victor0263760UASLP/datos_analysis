@@ -83,7 +83,7 @@ gcc -fPIC -shared -o algo.c otracosa.so
 Primero vamos hacer algo muy importarte deseamos sumar dos numeros, podemos hacer la suma de a y b y lo hacemos  en el lenguaje de programación c buscando las librerias que me permitan usarlas  todas las funciones del mismo , en donde hacemos una función que permita almacenar cada una de las variables involucradas en la suma  y claro un return para después utilizar el valor de la función.
 
 Podemos tomar en cuenta  al hacer el archivo.c que se almacene en la misma carpeta en donde vamos a generar cada uno de nuestros archivos .
-Como podemos ver a continuación tenemos el archivo.c. te invito a utilizarlo puedes implementarlo como se muestra a continuación.
+Como podemos ver a continuación tenemos el archivo.c. te invito a utilizarlo para que puedas implementarlo como se muestra a continuación.
 
 ## Sumar dos números enteros (numerosenteros.c)
 
@@ -93,7 +93,7 @@ Primero vamos a buscar crear un programa que sume dos números en nuestro progra
 Una de las características más importantes en el uso de sumar variables tenemos en consideracion la suma de las variables  a + b como variables enteras, el archivo se llama numerosenteros.c
 
 
-La función se establce de acuerdo a la siguiente forma, primero vamos a agregar las librerías correspondientes a c de la siguiente manera.
+La función se establece de acuerdo a la siguiente forma, primero vamos a agregar las librerías correspondientes a c de la siguiente manera.
 ```c 
 #include <stdlib.h>// include library c.
 #include <stdio.h> //include functions of the library  c.
@@ -121,6 +121,7 @@ return sum ;
 }
 
  ```
+Ahora tenemos nuestro  codigo generado. podemos ingresar en la terminal  para encontrar nuestro archivo , ahora bien cuando sabemos que estamos en la dirección correcta, vamos a generar nuestro archivo.so  como ejemplo podemos ver la siguiente forma.
 
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
@@ -129,6 +130,9 @@ PROBLEMS                    OUTPUT                    DEBUG CONSOLE             
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
+De esa manera podemos ver que nuestro archivo.so se genero y podemos pasar al suguiente paso, utilizar python para extraer los datos, lo cual podemos ver a continuación en el siguiente archivo.
+
+
 ## Archivo  sumaenteros.py
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  sumaenteros.py 
@@ -139,7 +143,8 @@ import ctypes as cl
 
 ```
 
-Podemos importar ctypes, cuya biblioteca es util para importar codigo que no sea de su origen.
+Podemos importar ctypes, cuya biblioteca es útil para importar código que no sea de su origen.
+Además accedemos a la dirección de nuestro file donde se encuentra almacenado nuestro archivo.so como podemos ver a continuación.
 ```Python
 #Asignamos  el file  o el path de nuestro archivo .so
 
@@ -149,7 +154,7 @@ file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 ```
 Asignamos un nombre aleatorio, en donde se pueda  definir  numerosenteros.
 
-Como en la siguiente asignación.
+Como en la siguiente asignación definiendo el file y añadiendo c.CDLL para  poder utilizar la funcion por medio de ctypes.
 
 ```Python
 numerosenteros=cl.CDLL(file)
@@ -158,7 +163,7 @@ numerosenteros=cl.CDLL(file)
 ```
 #En el script python definimos el valor de nuestras variables.
 
-#Como en el siguiente ejemplo para la suma de dos numeros enteros.
+#Como en el siguiente ejemplo para la suma de dos numeros enteros asiganmos un valor  tipo entero de la siguiente manera  en este caso podemos asignar un nombre a  cada una de las variables, en este caso las seleccionamos como a y b.
 ```Python
 
 a = 8 #Assigment of variable a
