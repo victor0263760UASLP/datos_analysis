@@ -696,7 +696,7 @@ El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer lo
 4) 
 <a href="www.file-extension.info/es/format/so" target="_blank">Texto del enlace</a>
 
-
+<a href="https://www.python.org/downloads/" target="_blank">Abrir enlace en una nueva ventana</a>
 5) https://www.python.org/downloads/.
 6) 
 <a href="https://www.ejemplo.com" target="_blank">nuevo</a>
