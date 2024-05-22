@@ -29,7 +29,8 @@ Después hacemos un programa en Python que pueda extraer el programa e imprimirl
 
  
 
-las librerías para instalar cada uno de los paquetes podemos verlos de la siguiente manera, para instalar Python y las librerías para generar los archivos , ya que en la terminal solo admite instalar los programas con la palabra seudo seguido de la contraseña que nos permitió ingresar al programa, posteriormente se instalaran todos los paquetes correspondientes a la aplicación uno de los paquetes no se instala el programa de Python o c no funcionara. los Path correspondientes se pueden consultan ingresando a la plataforma de Git Hub donde dependiendo de los requerimientos de tu equipo podrás consultarlos e instalarlos con la palabra seudo dependiendo de los requerimientos necesarios en el programa de tu computadora, sin embargo en Visual Studio se encuentran muchas herramientas de compilación.
+las librerías para instalar cada uno de los paquetes podemos verlos de la siguiente manera, para instalar Python y las librerías para generar los archivos , ya que en la terminal solo admite instalar los programas con la palabra seudo seguido de la contraseña que nos permitió ingresar al programa, posteriormente se instalaran todos los paquetes correspondientes a la aplicación uno de los paquetes no se instala el programa de Python o c no funcionara. 
+Los Paths correspondientes se pueden consultan ingresando a la plataforma de Git Hub donde dependiendo de los requerimientos de tu equipo podrás consultarlos e instalarlos con la palabra seudo dependiendo de los requerimientos necesarios en el programa de tu computadora, sin embargo en Visual Studio se encuentran muchas herramientas de compilación.
 
  
 Ahora estamos listos para crear nuestros scripts  de c, generar el archivo .so  y  ayudandonos para administrarlo con Python con la biblioteca ctypes.
@@ -417,7 +418,7 @@ Después realizamos con dos for  dos ciclos  para poder realizar la suma de nues
 
 De esa forma podemos ver a  cada una de nuestras variables en el ciclo for que está definido, e inicia en cero. 
 
-En donde definimos el valor de n. 
+En donde definimos  el valor de n =10, donde podemos  hacer un ciclo for que comienze en cero y sea menor que 10.
 
 
 ```c 
@@ -561,7 +562,7 @@ Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la termi
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
 ```
 
-Para cargar  en c el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos en Python de la siguiente manera.
+Para cargar  en c ,el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos en Python de la siguiente manera.
 
 ## Generator_array.py
 
