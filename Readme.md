@@ -595,6 +595,7 @@ clear:
 Para posteriormente ejectutar nuestro programa con la función cp  y en la terminal solo con la palabra Makefile toda la lista de comandos se puede ejecutar de manera automatica.
 ## Conclusión: 
 El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer los archivos de la dirección de tu programa  mencionando el tipo de documento realizando  un archivo compartido .so, de manera mas general,llegamos a  generar un archivo .c  que sume dos numeros de tipo float, int, double  y se puedan extraer con Python utilizando la biblioteca ctypes, además puedes hacer la suma de arreglos y llegar a generar un vector de arreglos definiendo un rango de iteraciones y todo ello se pudo abrir con Python  utilizando el archivo .so
+Nota* para el caso de hipervinculos en markdown  no se pudo con un solo click  que cada hipervicnulo se abriera en otra pestaña  debido a la naturaleza de archivos.md por esa razon se  implemento una opcion  dando click izquierdo en cada hipervinculo mostrara la opci+on para abrirlo, muestra opción como 
 
 ## Fuentes consultadas: 
 
