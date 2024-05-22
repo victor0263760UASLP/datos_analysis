@@ -100,27 +100,18 @@ La función se establece de acuerdo a la siguiente forma, primero vamos a agrega
 #include <stdio.h> //include functions of the library  c.
 
  ``` 
- 
-
 Posteriormente agregamos el código correspondiente de la función que funciona con enteros.
 La función realiza la operacion de sumar dos variables, la cual podemos determinarla con la variable sum, podemos ver que hace un return  del valor de nuestra función.
 ```c 
 int suma(  int  a,  int b,  int sum){
- 
-
 sum = a + b;
-
- 
-
 //Posteriormente podemos agregar de manera compacta la suma con la variable sum , además de agregar el return para que regrese nuestra función de la 
  //siguiente manera.
-
 
 return sum ;  
 //return(sum);
 
 }
-
  ```
 Ahora tenemos nuestro  codigo generado. podemos ingresar en la terminal  para encontrar nuestro archivo , ahora bien cuando sabemos que estamos en la dirección correcta, vamos a generar nuestro archivo.so  como ejemplo podemos ver la siguiente forma.
 podemos visualizar esta linea de comandos en la parte inferior  cuando ejecutamos un programa en el entorno visual estudio nosotros vamos a utilizar la parte donde dice terminal.
@@ -130,10 +121,7 @@ Ahora bien podemos tener almacenado el valor de sum que nos ayuda para utilizarl
 Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 
 
-
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
-
-
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 ```Python
@@ -168,7 +156,6 @@ Como en la siguiente asignación definiendo el file y añadiendo c.CDLL para  po
 ```Python
 numerosenteros=cl.CDLL(file)
 
-
 ```
 #En el script python definimos el valor de nuestras variables.
 
@@ -185,7 +172,6 @@ Vamos a imprimir con la función type para numeros enteros;como podemos ver en e
 print(type(numerosenteros))  # print of the type of function.
 
 ```
-
 Posteriormente definimos el archivo que tenemos cargado donde se encuentra toda esa sintaxis  del archivo donde tomamos solo la función suma con las variables correspondientes  asignadas con a y b.
 De la siguiente manera:
 ```Python
@@ -224,7 +210,6 @@ return sum ;
 //return(sum);
 
 }
-
 
  ```
 ## Generar el archivo .so a partir de un programa suma_float.c
@@ -275,7 +260,6 @@ n_suma.restype = ctypes.c_float #toma la funcion de n_suma restype
 
 #Por último imprimimos la suma de las dos variables.
 
-
 print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
  ``` 
 ## Ejemplo 3
@@ -292,21 +276,13 @@ Agregamos nuevamente las instrucciones de nuestra función que va a sumar númer
 Agregamos ahora la función que nos va a permitir la suma  de dos numeros flotantes  realizandola de la siguiente manera:
 ```c 
  double suma(  double  a,  double b,  double sum){
- 
 
-
-
-//Posteriormente podemos añadir la suma de los dos números doubles. 
-
- 
-sum = a + b;
+sum = a + b;//Posteriormente podemos añadir la suma de los dos números doubles. 
 
 ```  
 Por último  agregamos la  variable return que nos permite regresar el valor de nuestra función 
 
  ```c 
-
-
 return sum ;  
 //return(sum);
 
@@ -329,56 +305,40 @@ Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  ut
 deacuerdo al siguiente código.
  ## Archivo  suma_doubles.py
 
- 
 ```Python
 #En el caso de la suma de numeros  tipo double podemos definir de la siguiente manera  importando la biblioteca ctypes.
 #import ctypes # import ctypes with extension cl.
 
 ``` 
 
-
 También podemos ver en el ejemplo  un file o un path de nuestro archivo de la siguiente manera.
 ```Python
 file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path. # Direction of the path.
 
 ``` 
-
-
 Asignamos un nombre a nuestra variable como la funcion2_suma  en donde vamos a cargar con ctypes el file.
 ```Python
 suma_doubles = ctypes.CDLL(file)   # importar funcion2_suma de file
-
 ```
-
-
 Asignamos el valor de cada una de las variables tipo double que vamos a sumar.
 ```Python
 a = 7.22001231364165885  #Assigment of variable a
 b = 10.2522564161451457   #Assigment of  variable b.
 
-
 ``` 
-
 Asignamos otro nombre de la siguiente manera incorporando nuestra  variable funcion2_suma y  nuestra función que se llama  suma es el nombre   de una de la función que podemos encontrar en el programa en c, si cambia el nombre de la función  o añadimos otra función en donde se puede considerar de la siguiente forma.
 ```Python
 n_suma = funcion2_suma.suma    #n_suma funcion2_suma. 
-
 ``` 
-
 #Posteriormente definimos n_suma con argtypes en donde tenemos  2 variables  que vamos a sumar tipo doubles.
 ```Python
 n_suma.argtypes = [ctypes.c_double ,ctypes.c_double] #n_suma argtypes
-
 ``` 
-
-
 Después asignamos  el tipo variables que van a salir de nuestro programa esto con restype asignando que son variables tipo double.
 
 ```Python
 n_suma.restype = ctypes.c_double  #toma la funcion de n_suma restype
-
 ``` 
-
 #Por último imprimimos la suma de nuestras dos variables tipo doubles.
 ```Python
 print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
@@ -388,8 +348,6 @@ print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
 
 ## sumar dos arreglos  
 Ahora vamos a comenzar realizando un programa que nos permita desarrollar  la suma de dos arreglos en c, por loc cual la suma la va  a realizar c y se va administrar con python, todos los valores se van a  proporcionar en python, pero c realizara todos los calculos de la suma de los dos arreglos. como podemos ver  en el primer codigo en c  como vamos generando un programa para permitirnos la suma de los dos arreglos.
-
-
 
 ## suma_arreglos_enteros.c
 
@@ -408,22 +366,14 @@ Después añadimos una función que nos permita  determinar  los tipos de variab
 ```c 
 int sum_array (int a[10],int b[10]){ //  determina el tipo de funcion  in_suma de las varibales de los arreglos a y b
 ``` 
-
- 
 También podemos añadir una variable que es la que vamos a realizar para obtener el valor.
  ```c 
 int resultado[10];
 
 ``` 
-
 Después realizamos con dos for  dos ciclos  para poder realizar la suma de nuestros dos  arreglos  de la siguiente manera.
-
-
 De esa forma podemos ver a  cada una de nuestras variables en el ciclo for que está definido, e inicia en cero. 
-
 En donde definimos  el valor de n = 10, donde podemos  hacer un ciclo for que comienze en cero y sea menor que 10.
-
-
 ```c 
 for (int i = 0; i < 10; i++) {  // realiza las iteraciones  de la suma de los dos arreglos, en unn ciclo for
 	resultado[i] = a[i] + b[i];
@@ -435,17 +385,12 @@ for (int i = 0; i < 10; i++) {  // realiza un ciclo for  que empieza en cero per
 	printf("%d ", resultado[i]);
 	
  ``` 
-
-
-
 Por último es muy importante agregar el return de nuestro resultado para posteriormente utilizarlo de la siguiente manera.
 ```c 
 
 }
 return resultado[10]; // regresa el resulado de las iteraciones
 }
-
-
 ```
 ## Generar el archivo .so a partir de un programa suma_arreglos_enteros.c
 
@@ -480,7 +425,6 @@ Aqui hay otro ejemplo de la dirección  de nuestro Path almacenado en otra direc
 #Podemos definir un nombre para  cargar nuestro archivo mediante la función ctypes.
 suma_arreglos_enteros =ctypes.CDLL(file) 
 ```
-
 Definimos  los argumentos que tenemos en la funcion y tambien el tipo de arreglo c_int
 ```Python
 #En este caso podemos definir un nombre llamado sum_array que define el nombre donde se encuentra almacendo nuestro file .
@@ -500,7 +444,6 @@ Obteniendo el resultado  indicando que son tipo int e indicando que son 10 argum
 ```Python
 resultado = np.zeros(10, dtype=np.intc)  #determina   la variable resultado con 10 caracteres.
 ```
-
 Donde almacenamos el nombre de nuestra función e indicando los argumentos de la siguiente manera , e indicando los valores tipo int, e indicando el numero de argumentos con len(a).
 Llamamos  a la función  que tenemos   almacenada de la funcion en c para imprimir el resultado.
 
@@ -510,14 +453,10 @@ deacuerdo al siguiente codigo.
 sum_array(a, b, resultado, len(a))#len (a) aplicada  a la funcion  ayuda a regresar el numero de elementos de numeros reales.
 
  ``` 
-
  ## Ejemplo 5
 
-
  ## Generator_array .c
-
-
-
+ 
 Para finalizar con el codigo en c, podemos ver un codigo que se llama la formulita; en donde primero vamos añadir las librerias fundamentales. 
 
 ```c
@@ -525,7 +464,6 @@ Para finalizar con el codigo en c, podemos ver un codigo que se llama la formuli
 
 #include <stdlib.h>// libreria para convertir un entero a cadena de caracteres.
 ```
- 
 Posteriormente determinamos  nuestra función de la siguiente manera indicando que es un vector de arreglos.
 
 ```c
@@ -534,7 +472,6 @@ float*array_float_string(float X0, float Xn, int n){
 //Vamos a  regresar el valor  float  de x con la función malloc
 float*x = (float*)malloc((n + 1)*sizeof(float));
  ```
- 
 Podemos definir un  cambio dx  flotante de la siguiente manera.
 ```c
 float dx =(Xn -X0)/(n+1);
@@ -548,29 +485,22 @@ for (int i =0; i<=n; i++){
 return x;
 
 }
- 
-
  ```
 ## Generar el archivo .so a partir de un programa Generator_array.c
 
 Ahora bien podemos tener almacenado el valor de x que nos ayuda para utilizarlo posteriormente en python.
 Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 
-
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
-
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 ```Python
-
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  Generator_array.so Generator_array.c
 ```
 
 Para cargar  en c ,el programa que se llama generator_array primero podemos importar las dos librerias fundamentales para extraer datos en Python de la siguiente manera.
 
 ## Generator_array.py
-
-
 
 ```Python
 import ctypes  #importamos ctypes  
@@ -583,21 +513,14 @@ Cargar la biblioteca compartida.
 ```Python
 file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 ```
-
-
-
 Después necesitamos  asignar un nombre para cargar nuestro archivo a ctypes de la siguiente manera , en ese caso asignamos con el nombre Generator_array.py sin embargo puede cambiar su nombre.
 ```Python
 Generator_array = ctypes.CDLL(file)  #carga la el archivo file  a ctypes.
 
 ```
-
 Las variables que vamos asignar para el funcionamiento de nuestro programa se desarrollan de la siguiente manera aunque las variables pueden determinarse al inicio o al final de nuestro programa.
-
-
 Dentro de algunas recomendaciones podemos destacar el numero de iteraciones que  depende de la memoria del computador, en este caso se realizo la iteración y para que funcionara de manera optima llego hasta un maximo  de  100000000.
 Algunos ejemplos de asignación de valores  a las variables se pueden mostrar a coninuación.
-
 
 ```Python
 x0 = 1.512871423416543
@@ -606,67 +529,45 @@ n = 100000000  #numeros enteros en el ciclo for para funcionar de manera optima 
 # añadimos el formato de nuestras variables dos flotantes y un entero
 
 ```
-
 Podemos definir un conjunto de variables tipo flotantes de la siguiente manera;primero vamos asignar  la variable que carga nuestro archivo posteriormente vamos a indicar la función que vamos a tomar como en el ejemplo.
 ```Python
 Generator_array.array_float_string.argtypes = [ctypes.c_float, ctypes.c_float, ctypes.c_int]
-
 ```
-
 Vamos a establecer el tipo de salida como variable  tipo float de  la siguiente manera, igual indicando con la función restype.
 ```Python
 Generator_array.array_float_string.restype = ctypes.POINTER(ctypes.c_float)#salida de nuestro arreglo 
 #de numeros flotantes
  ``` 
-
 Vamos a definir una función con la palabra def  en donde podemos indicar  sus variables.
 ```Python
 def array_float_string(x0, xn, n):
 	#llamamos la funcion de nuestra programa escrito en c con sus varibles
-
 ```
 ```Python
 #Ahora bien podemos definir el arreglo de Array_sring1 y de la  función definida anteriormente.	
 arreglo = Generaor_array.array_float_string(x0, xn, n)
-
 ```
-
-
-
 Un paso muy importante es apoyarnos de la libreria de numpy  en donde definimos un nombre que defina las ieraciones de nuestros  arreglos.
 ```Python
 #utilizamos el arreglo de ctypes a numpy  que vaya iterando en el rango de (n+1)
 	convertir_arreglo= np.array([arreglo[i] for i in range(n+1)])
 ```
-
-
-
-
 De esta función vamos a realizar un return para posterormente utilizarla.
 ```Python
 	#hacemos un return de la funcion 
 	return convertir_arreglo
-
 ```
-
 Ahora vamos a definir la palabra que realizamos return como una función que contenga las variables.
 ```Python
 #convertirmos e imprimimos la función.
 convertir_arreglo = array_float_string(x0, xn, n)
-
 ```
-
 Por Último imprimimos convertir_arreglo y podemos definir  una cadena de  soluciones en un arreglo que va determinado por el rango que indicamos y el numero de iteraciónes.
 ```Python
 print( convertir_arreglo)
  
-
  ``` 
-
-
 ## Makefile 
-
-
 
 Para el caso del makefile tenemos que escribir el archivo de la siguiente forma para posteriormente. 
 Podemos indicar de manera formal que  nuestro archivo  se pueda generar de manera automatica de la siguiente manera.
@@ -686,27 +587,11 @@ Por último limpia los archivos creados .o con la función rm y podemos abrirlo 
 ```makefile 
 clear:
 	rm funcion_array.o
-``` 
- 
-
- 
- 
-
+```
 ## Conclusión: 
-
- 
-
-El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer los archivos de la dirección de tu programa  mencionando el tipo de documento realizando  un archivo compartido .so, de manera mas general,llegamos a  generar un archivo .c  que sume dos numeros de tipo float, int, double  y se puedan extraer con Python utilizando la biblioteca ctypes, además puedes hacer la suma de arreglos y llegar a generar un vector de arreglos definiendo un rango de iteraciones y todo ello se pudo abrir con Python  utilizando el archivo .so.
-
-
- 
+El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer los archivos de la dirección de tu programa  mencionando el tipo de documento realizando  un archivo compartido .so, de manera mas general,llegamos a  generar un archivo .c  que sume dos numeros de tipo float, int, double  y se puedan extraer con Python utilizando la biblioteca ctypes, además puedes hacer la suma de arreglos y llegar a generar un vector de arreglos definiendo un rango de iteraciones y todo ello se pudo abrir con Python  utilizando el archivo .so
 
 ## Fuentes consultadas: 
-
-
- 
-
-
 1) https://visualstudio.microsoft.com/. 
 [Ir a Google](https://www.google.com)
  
