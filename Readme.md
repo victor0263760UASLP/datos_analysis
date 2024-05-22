@@ -133,7 +133,7 @@ De esa manera podemos ver que nuestro archivo.so se generó y podemos pasar al s
 ## Archivo  sumaenteros.py
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  sumaenteros.py 
-deacuerdo al siguiente codigo.
+deacuerdo al siguiente código vamos a utilizarlo para administrar los datos , anteriormente pudimos observar  que  generamos un archivo.s, entonces ahora podemos cargar la ubicación del archivo.so e utilizarlo en python e ingresar el valor de cada una de las variables para posteriormente obtener la suma apartir de tener un código en c  y administrarlo con python, como podemos ver a continuación cada uno de los pasos utilizados en lenguaje de python.
 ```Python
 #codigo que ayuda  para sumar dos numeros enteros desde la funcion de  numeros enteros
 import ctypes as cl
@@ -228,6 +228,7 @@ Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  ut
 deacuerdo al siguiente código.
 
  ## Archivo  suma_float.py
+ Ahora bien este archivo nos va ayudar para administrar  el programa que anteriormente realizamos en lenguaje  C , donde  se realizo una función para  obtener la suma de dos números flotantes, es ahora de llegar a administrarlo con python de la siguiente manera cargando el archivo.so de la dirección donde lo tenemos almacenado, para posteriormente asignar la función y el nombre que podemos elegir para nuestros datos y asi paso por paso llegar a obtener la suma de los dos numeros flotantes.
 
 ```Python
 #Ahora vamos a necesitar un programa  que se llama suma_float.
@@ -244,7 +245,7 @@ a = 7.2200123  #Assigment of variable a
 b = 10.25225  #Assigment of  variable b.
 ``` 
 
-Vamos asignar una variable que nos permita extraer el archivo y asignar la función que deseamos sumar.
+Vamos asignar una variable que nos permita extraer el archivo y asignar la función que deseamos sumar, ya que nos permitirá almacenar el valor de la funciòn que een este caso es suma.
 
 ```Python
 n_suma = funcion2_suma.suma    #n_suma funcion2_suma. 
@@ -254,7 +255,7 @@ n_suma = funcion2_suma.suma    #n_suma funcion2_suma.
 n_suma.argtypes = [ctypes.c_float,ctypes.c_float] #n_suma argtypes
 ``` 
 
-Ahora definimos que tipo de variables van a salir de nuestro programa de la siguiente forma.
+Ahora definimos que tipo de variables van a salir de nuestro programa de la siguiente forma, podemos encontrar que son tipo float razón por lo cual añadimos como se puede observar con la función de ctypes.
 ```Python
 n_suma.restype = ctypes.c_float #toma la funcion de n_suma restype
 
@@ -266,6 +267,7 @@ print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
 
 ## Sumar dos numeros doubles(suma_doubles.c)
 Podemos considerar sumar dos numeros doubles , entonces relizamos una función  que nos permita obtener la suma, en este caso podemos implemntarlo en c, sumamos los dos valores  y después con un return almacenamos el valor generado que en este caso  se considera con la  variable sum.
+Tomamos en cuenta que  el programa en c va hacer quien va a realizar los calculos y python solo va adminstrar esos datos , entonces en este caso podemos encontrar que en c solo vamos a realizar la función, que podemos comenzar de la siguiente forma. 
 
 Ahora podemos hacer una función que nos ayude a obtener la suma de  2 números doubles; primero añadimos las bibliotecas. 
 ```c 
@@ -362,7 +364,7 @@ Primero  agregamos las librerias correspondientes de la siguiente manera:
 
 ``` 
 
-Después añadimos una función que nos permita  determinar  los tipos de variables.
+Después añadimos una función que nos permita  determinar  los tipos de variables, en nuestro caso son variables tipo entero que dependen de la función sum_array, donde las dos variables tienen una dimensión de 10.
 ```c 
 int sum_array (int a[10],int b[10]){ //  determina el tipo de funcion  in_suma de las varibales de los arreglos a y b
 ``` 
@@ -404,6 +406,7 @@ Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la termin
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
 ```
 ## Archivo  suma_arreglos_enteros.py
+Podemos considerar un archivo en python que suma dos arreglos tipo enteros, donde anteriormente definimos en un programa en c, ahora llega el turno para utilizar como vamos administrar nuestro archivo, en este archivo.py vamos administrar los datos de nuestra función  realizada anteriormente, vamos agregar dos arreglos tipo enteros empezando de la siguiente manera, primero necesitamos el archivo.so que generamos para utilizarlo ya  nos va ayudar a poder utilizar el archivo.so para abrirlo en python.
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar suma_arreglos_enteros .py 
 deacuerdo al siguiente codigo.
 ```Python
@@ -425,7 +428,7 @@ Aqui hay otro ejemplo de la dirección  de nuestro Path almacenado en otra direc
 #Podemos definir un nombre para  cargar nuestro archivo mediante la función ctypes.
 suma_arreglos_enteros =ctypes.CDLL(file) 
 ```
-Definimos  los argumentos que tenemos en la funcion y tambien el tipo de arreglo c_int
+Definimos  los argumentos que tenemos en la función y también el tipo de arreglo c_int
 ```Python
 #En este caso podemos definir un nombre llamado sum_array que define el nombre donde se encuentra almacendo nuestro file .
 sum_array = suma_arreglos_enteros.sum_array
@@ -456,8 +459,8 @@ sum_array(a, b, resultado, len(a))#len (a) aplicada  a la funcion  ayuda a regre
  ## Ejemplo 5
 
  ## Generator_array .c
- 
-Para finalizar con el codigo en c, podemos ver un codigo que se llama la formulita; en donde primero vamos añadir las librerias fundamentales. 
+Podemos realizar un código  en lenguaje en c  que le pusimos de nombre Generator_array ya que este código nos va a generar un conjunto de datos que dependen de los rangos que podemos definir en el programa, generandonos un conjunto de datos que siguen un cambio en dx, que en este caso podemos establecer pasos o cambios en numeros flotantes y también  definimos cunatos valores vamos a obtener.
+Podemos como primer paso  añadir las librerias fundamentales  que podemos ver a continuación:
 
 ```c
 #include <stdio.h> // libreria  que ayuda a funciones en c.
@@ -502,6 +505,8 @@ Para cargar  en c ,el programa que se llama generator_array primero podemos impo
 
 ## Generator_array.py
 
+Podemos implementar un código en python que nos permita administrar  el archivo en c que realizamos anteriormente, podemos observar algo muy importante en cada uno de los archivos en python que no en todos utilizamos numpy como podemos ver que en algunos casos si , siempre primer cargando la ubicación donde se encuentra almacenado nuestro archivo.so y en cada una de ellas utilizamos ctypes ya  que nos permite realizar la dinamica de interacción de las funciónes de c y en python agregar los dats y administrarlos.
+
 ```Python
 import ctypes  #importamos ctypes  
 import numpy as np #importamos numpy que nos facilita la conversion de datos
@@ -520,7 +525,7 @@ Generator_array = ctypes.CDLL(file)  #carga la el archivo file  a ctypes.
 ```
 Las variables que vamos asignar para el funcionamiento de nuestro programa se desarrollan de la siguiente manera aunque las variables pueden determinarse al inicio o al final de nuestro programa.
 Dentro de algunas recomendaciones podemos destacar el numero de iteraciones que  depende de la memoria del computador, en este caso se realizo la iteración y para que funcionará de manera optima llego hasta un maximo  de  100000000.
-Algunos ejemplos de asignación de valores  a las variables se pueden mostrar a continuación.
+Algunos ejemplos de asignación de valores  a las variables se pueden mostrar a continuación:
 
 ```Python
 x0 = 1.512871423416543
@@ -562,7 +567,7 @@ Ahora vamos a definir la palabra que realizamos return como una función que con
 #convertirmos e imprimimos la función.
 convertir_arreglo = array_float_string(x0, xn, n)
 ```
-Por Último imprimimos convertir_arreglo y podemos definir  una cadena de  soluciónes en un arreglo que va determinado por el rango que indicamos y el número de iteraciónes.
+Por Último imprimimos convertir_arreglo y podemos definir  una cadena de  soluciónes en un arreglo que va determinado por el rango que indicamos y el número de iteraciónes o de resultados depende del paso que podemos determinar en c.
 ```Python
 print( convertir_arreglo)
  
