@@ -597,32 +597,16 @@ Para posteriormente ejectutar nuestro programa con la función cp  y en la termi
 El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer los archivos de la dirección de tu programa  mencionando el tipo de documento realizando  un archivo compartido .so, de manera mas general,llegamos a  generar un archivo .c  que sume dos numeros de tipo float, int, double  y se puedan extraer con Python utilizando la biblioteca ctypes, además puedes hacer la suma de arreglos y llegar a generar un vector de arreglos definiendo un rango de iteraciones y todo ello se pudo abrir con Python  utilizando el archivo .so
 
 ## Fuentes consultadas: 
-1) https://visualstudio.microsoft.com/. 
-[Ir a Google](https://www.google.com)
- 
+1) https://visualstudio.microsoft.com/.
 
 2) https://www.file-extension.info/es/format/so
-<a id="miEnlace" href="#">HtmlMasters</a>
-<script>
-     const enlace = document.getElementById("https://www.file-extension.info/es/format/so");
-     enlace.href="#";
-     enlace.addEventListener('click', function(){
-        window.open('https://htmlmasters.tech','_blank');
-     });
-</script> 
- 
-[Abrir enlace en nueva página](https://www.google.com "Sitio de ejemplo" target="_blank")
 
 3) https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/programacion-con-c/
-
-4) 
-<a href="www.file-extension.info/es/format/so" target="_blank">Texto del enlace</a>
-
-<a href="https://www.python.org/downloads/" target="_blank">Abrir enlace en una nueva ventana</a>
+   
 5) https://www.python.org/downloads/.
-6) 
-<a href="https://www.ejemplo.com" target="_blank">nuevo</a>
 
+7) https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks
+   
+9) https://www.gnu.org/software/make/manual/make.html
 
-p>Check out <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>.</p>
 
