@@ -597,7 +597,7 @@ Para posteriormente ejectutar nuestro programa con la función cp  y en la termi
 El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer los archivos de la dirección de tu programa  mencionando el tipo de documento realizando  un archivo compartido .so, de manera mas general,llegamos a  generar un archivo .c  que sume dos numeros de tipo float, int, double  y se puedan extraer con Python utilizando la biblioteca ctypes, además puedes hacer la suma de arreglos y llegar a generar un vector de arreglos definiendo un rango de iteraciones y todo ello se pudo abrir con Python  utilizando el archivo .so
 
 ## Fuentes consultadas: 
-1) <a href="https://visualstudio.microsoft.com/" target="_blank">Visitar Ejemplo.com</a>
+1) <a href="https://visualstudio.microsoft.com/" target="_blank">Visualstudio</a>
 
 
 
