@@ -505,7 +505,7 @@ Para cargar  en c ,el programa que se llama generator_array primero podemos impo
 
 ## Generator_array.py
 
-Podemos implementar un código en python que nos permita administrar  el archivo en c que realizamos anteriormente, podemos observar algo muy importante en cada uno de los archivos en python que no en todos utilizamos numpy como podemos ver que en algunos casos si , siempre primer cargando la ubicación donde se encuentra almacenado nuestro archivo.so y en cada una de ellas utilizamos ctypes ya  que nos permite realizar la dinamica de interacción de las funciónes de c y en python agregar los dats y administrarlos.
+Podemos implementar un código en python que nos permita administrar  el archivo en c que realizamos anteriormente, podemos observar algo muy importante en cada uno de los archivos en python que no en todos utilizamos numpy como podemos ver que en algunos casos si , siempre primer cargando la ubicación donde se encuentra almacenado nuestro archivo.so y en cada una de ellas utilizamos ctypes ya  que nos permite realizar la dinamica de interacción de las funciónes de c y en python agregar los datos y administrarlos.
 
 ```Python
 import ctypes  #importamos ctypes  
