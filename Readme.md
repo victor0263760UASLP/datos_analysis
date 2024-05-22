@@ -596,7 +596,7 @@ Para posteriormente ejectutar nuestro programa con la función cp  y en la termi
 ## Conclusión: 
 El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer los archivos de la dirección de tu programa  mencionando el tipo de documento realizando  un archivo compartido .so, de manera mas general,llegamos a  generar un archivo .c  que sume dos numeros de tipo float, int, double  y se puedan extraer con Python utilizando la biblioteca ctypes, además puedes hacer la suma de arreglos y llegar a generar un vector de arreglos definiendo un rango de iteraciones y todo ello se pudo abrir con Python  utilizando el archivo .so.
 
-Nota* para el caso de hipervinculos en markdown  no se pudo con un solo click  que cada hipervínculo se abriera en otra pestaña  debido a la naturaleza de archivos.md por esa razon se  implementó una opción  dando click izquierdo en cada hipervinculo mostrara la opción para abrirlo, muestra opción como  open link in new tab, open link in new window y open link in incógnito window recomendamos open link in new tab.
+Nota* para el caso de hipervínculos en markdown  no se pudo con un solo click  que cada hipervínculo se abriera en otra pestaña  debido a la naturaleza de archivos.md por esa razon se  implementó una opción  dando click izquierdo en cada hipervinculo mostrara la opción para abrirlo, muestra opción como  open link in new tab, open link in new window y open link in incógnito window recomendamos open link in new tab.
 
 ## Fuentes consultadas: 
 
