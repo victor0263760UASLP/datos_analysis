@@ -78,7 +78,7 @@ gcc -fPIC -shared -o funcion.c funcion1.so
 
 
 ## Ejemplo 1
-Primero vamos hacer algo muy importarte deseamos sumar dos numeros, podemos hacer la suma de a y b y lo hacemos  en el lenguaje de programación c buscando las librerias que me permitan usarlas  todas las funciones del mismo , en donde hacemos una función que permita almacenar cada una de las variables involucradas en la suma  y claro un return para después utilizar el valor de la función.
+Primero vamos hacer algo muy importante deseamos sumar dos numeros, podemos hacer la suma de a y b y lo hacemos  en el lenguaje de programación c buscando las librerias que me permitan usarlas  todas las funciones del mismo , en donde hacemos una función que permita almacenar cada una de las variables involucradas en la suma  y claro un return para después utilizar el valor de la función.
 
 Podemos tomar en cuenta  al hacer el archivo.c que se almacene en la misma carpeta en donde vamos a generar cada uno de nuestros archivos .
 Como podemos ver a continuación tenemos el archivo.c. te invito a utilizarlo para que puedas implementarlo como se muestra a continuación.
@@ -228,7 +228,9 @@ return sum ;
 
 Ahora bien podemos tener almacenado el valor de sum que nos ayuda para utilizarlo posteriormente en python.
 Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
+
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 ```Python
@@ -247,7 +249,7 @@ import ctypes # import ctypes
 Después asignamos un nombre que nos permita recordar el archivo.
 
 ```Python
-file =("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path. 
+file =("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 funcion2_suma=ctypes.CDLL(file)   # importar funcion2_suma de file
 #Asignamos el valor de cada una de las variables de numeros flotantes.
 a = 7.2200123  #Assigment of variable a
@@ -320,7 +322,7 @@ User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_doubles.so suma_doubles.c
 ```
 
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar  suma_doubles.py 
-deacuerdo al siguiente codigo.
+deacuerdo al siguiente código.
  ## Archivo  suma_doubles.py
 
  
@@ -445,6 +447,7 @@ return resultado[10]; // regresa el resulado de las iteraciones
 
 Ahora bien podemos tener almacenado el valor de resultado que nos ayuda para utilizarlo posteriormente en python.
 Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
