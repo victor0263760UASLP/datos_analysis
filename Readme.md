@@ -397,7 +397,7 @@ return resultado[10]; // regresa el resulado de las iteraciones
 ## Generar el archivo .so a partir de un programa suma_arreglos_enteros.c
 
 Ahora bien podemos tener almacenado el valor de resultado que nos ayuda para utilizarlo posteriormente en python.
-Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
