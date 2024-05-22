@@ -29,14 +29,16 @@ Después hacemos un programa en Python que pueda extraer el programa e imprimirl
 
  
 
-las librerías para instalar cada uno de los paquetes podemos verlos de la siguiente manera, para instalar Python y las librerías para generar los archivos , ya que en la terminal solo admite instalar los programas con la palabra seudo seguido de la contraseña que nos permitió ingresar al programa, posteriormente se instalaran todos los paquetes correspondientes a la aplicación uno de los paquetes no se instala el programa de Python o c no funcionara. 
-Los Paths correspondientes se pueden consultan ingresando a la plataforma de Git Hub donde dependiendo de los requerimientos de tu equipo podrás consultarlos e instalarlos con la palabra seudo dependiendo de los requerimientos necesarios en el programa de tu computadora, sin embargo en Visual Studio se encuentran muchas herramientas de compilación.
+las librerías para instalar cada uno de los paquetes podemos verlos de la siguiente manera, para instalar Python y las librerías para generar los archivos    ya que en la terminal solo admite instalar los programas con la palabra seudo seguido de la contraseña que nos permitió ingresar al programa, posteriormente 
+
+se instalaran todos los paquetes correspondientes a la aplicación uno de los paquetes no se instala el programa de Python o c no funcionara. 
+Los Paths correspondientes se pueden consultan ingresando a la plataforma de Git Hub donde dependiendo de los requerimientos de tu equipo podrás consultarlos 
+e instalarlos con la palabra seudo dependiendo de los requerimientos necesarios en el programa de tu computadora, sin embargo en Visual Studio se encuentran muchas herramientas de compilación.
 
  
 Ahora estamos listos para crear nuestros scripts  de c, generar el archivo .so  y  ayudandonos para administrarlo con Python con la biblioteca ctypes.
 
 
- 
 
 ## Implementación  
 
@@ -279,6 +281,7 @@ print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
 ## Ejemplo 3
 
 ## Sumar dos numeros doubles(suma_doubles.c)
+Podemos considerar sumar dos numeros doubles , entonces relizamos una función  que nos permita obtener la suma, en este caso podemos implemntarlo en c, sumamos los dos valores  y después con un return almacenamos el valor generado que en este caso  se considera con la  variable sum.
 
 Ahora podemos hacer una función que nos ayude a obtener la suma de  2 números doubles; primero añadimos las bibliotecas. 
 ```c 
@@ -348,7 +351,7 @@ suma_doubles = ctypes.CDLL(file)   # importar funcion2_suma de file
 ```
 
 
-Asignamos el valor de cada una de las varibales tipo double que vamos a sumar.
+Asignamos el valor de cada una de las variables tipo double que vamos a sumar.
 ```Python
 a = 7.22001231364165885  #Assigment of variable a
 b = 10.2522564161451457   #Assigment of  variable b.
@@ -356,13 +359,13 @@ b = 10.2522564161451457   #Assigment of  variable b.
 
 ``` 
 
-Asignamos otro nombre de la siguiente manera incorporando nuestra  variable funcion2_suma y  nuestra función que se llama  suma.
+Asignamos otro nombre de la siguiente manera incorporando nuestra  variable funcion2_suma y  nuestra función que se llama  suma es el nombre   de una de la función que podemos encontrar en el programa en c, si cambia el nombre de la función  o añadimos otra función en donde se puede considerar de la siguiente forma.
 ```Python
 n_suma = funcion2_suma.suma    #n_suma funcion2_suma. 
 
 ``` 
 
-#Posteriormente definimos n_suma con argtypesen donde tenemos  2 variables  que vamos a sumar tipo doubles.
+#Posteriormente definimos n_suma con argtypes en donde tenemos  2 variables  que vamos a sumar tipo doubles.
 ```Python
 n_suma.argtypes = [ctypes.c_double ,ctypes.c_double] #n_suma argtypes
 
@@ -384,7 +387,7 @@ print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
 ## Ejemplo 4
 
 ## sumar dos arreglos  
-
+Ahora vamos a comenzar realizando un programa que nos permita desarrollar  la suma de dos arreglos en c, por loc cual la suma la va  a realizar c y se va administrar con python, todos los valores se van a  proporcionar en python, pero c realizara todos los calculos de la suma de los dos arreglos. como podemos ver  en el primer codigo en c  como vamos generando un programa para permitirnos la suma de los dos arreglos.
 
 
 
@@ -418,7 +421,7 @@ Después realizamos con dos for  dos ciclos  para poder realizar la suma de nues
 
 De esa forma podemos ver a  cada una de nuestras variables en el ciclo for que está definido, e inicia en cero. 
 
-En donde definimos  el valor de n =10, donde podemos  hacer un ciclo for que comienze en cero y sea menor que 10.
+En donde definimos  el valor de n = 10, donde podemos  hacer un ciclo for que comienze en cero y sea menor que 10.
 
 
 ```c 
@@ -455,6 +458,7 @@ Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la termin
 ```Python
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  suma_arreglos_enteros.so suma_arreglos_enteros.c
 ```
+## Archivo  suma_arreglos_enteros.py
 Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  utilizar suma_arreglos_enteros .py 
 deacuerdo al siguiente codigo.
 ```Python
@@ -582,7 +586,7 @@ file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 
 
 
-Después necesitamos  asignar un nombre para cargar nuestro archivo a ctypes de la siguiente manera , en ese caso asignamos con el nombre Array_string1 sin embargo puede cambiar su nombre.
+Después necesitamos  asignar un nombre para cargar nuestro archivo a ctypes de la siguiente manera , en ese caso asignamos con el nombre Generator_array.py sin embargo puede cambiar su nombre.
 ```Python
 Generator_array = ctypes.CDLL(file)  #carga la el archivo file  a ctypes.
 
