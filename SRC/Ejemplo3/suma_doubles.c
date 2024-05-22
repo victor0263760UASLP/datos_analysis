@@ -2,7 +2,7 @@
 #include <stdio.h> //include functions of the library  c.
 
 
-int suma(  double  a,  double b,  double sum){
+double suma(  double  a,  double b,  double sum){
 
  // return the variable sum.
 sum = a + b;
