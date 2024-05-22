@@ -186,7 +186,7 @@ print(numerosenteros.suma(a,b))#print the variables
 De esta forma sumamos dos variables y podemos tener el resultado  que veremos  impreso en pantalla.
 
 ## Ejemplo 2
-Podemos considerar para  realizar este programa priimero hacer un programa en lenguaje c que pueda sumar dos numeros solo que  en este caso podemos implementar sumar  2 numeros flotantes, podemos implementar este código de la siguiente manera como podemos ver a continuación , eligiendo dos variables para  realizar una función que me permita sumar las dos variables.
+Podemos considerar para  realizar este programa primero hacer un programa en lenguaje c que pueda sumar dos numeros solo que  en este caso podemos implementar sumar  2 numeros flotantes, podemos implementar este código de la siguiente manera como podemos ver a continuación , eligiendo dos variables para  realizar una función que me permita sumar las dos variables como podemos observar en le programa suma_float.c.
 
 ##  sumar dos numeros flotantes(suma_float.c)
  
@@ -242,6 +242,7 @@ import ctypes # import ctypes
 Después asignamos un nombre que nos permita recordar el archivo.
 
 ```Python
+file =("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path. 
 funcion2_suma=ctypes.CDLL(file)   # importar funcion2_suma de file
 #Asignamos el valor de cada una de las variables de numeros flotantes.
 a = 7.2200123  #Assigment of variable a
@@ -329,9 +330,10 @@ file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path. # Direction 
 
 Asignamos un nombre a nuestra variable como la funcion2_suma  en donde vamos a cargar con ctypes el file.
 ```Python
-funcion2_suma=ctypes.CDLL(file)   # importar funcion2_suma de file
+suma_doubles = ctypes.CDLL(file)   # importar funcion2_suma de file
 
-``` 
+```
+
 
 Asignamos el valor de cada una de las varibales tipo double que vamos a sumar.
 ```Python
@@ -375,20 +377,20 @@ print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
 
 ## suma_arreglos_enteros.c
 
-Ahora podemos  desarrollar un programa que nos ayude con un programa que nos permita la sumna de dos arreglos de dimension 10.
+Ahora podemos  desarrollar un programa que nos ayude con un programa que nos permita la suma de dos arreglos de dimension 10.
 
 Primero  agregamos las librerias correspondientes de la siguiente manera:
 ```c 
 //program to do array add to vectors
 #include <stdio.h> // libreria  que ayuda a funciones en c
 
-#include <stdlib.h>// libreria para convertir un enero a cadena de caracteres
+#include <stdlib.h>// libreria para convertir un enero a cadena de caracteres.
 
 ``` 
 
-Después añadimos una función que nos permitia  determinar  el tipo de variables.
+Después añadimos una función que nos permita  determinar  los tipos de variables.
 ```c 
-int sum_array (int a[10],int b[10]){ //  deermina el tipo de funcion  in_suma de las varibales de los arreglos a y b
+int sum_array (int a[10],int b[10]){ //  determina el tipo de funcion  in_suma de las varibales de los arreglos a y b
 ``` 
 
  
@@ -446,21 +448,21 @@ import numpy as np   #importamos numpy
 Podemos cargar la biblioteca de muchas maneras distinas una de ellas en cargando el archivo .so  que se encuentra en la misma biblioteca.
 ```Python
 # Cargar la biblioteca compartida
-#funcion_array = ctypes.CDLL('./Archivo.so')
+
 #Por esta ocasión definimos el Path de nuestro archivo, la localización del archivo .so
 file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 ``` 
 Aqui hay otro ejemplo de la dirección  de nuestro Path almacenado en otra dirección.
 ```Python
-file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
+#suma_arreglos_enteros = ctypes.CDLL('./Archivo.so')
 #Podemos definir un nombre para  cargar nuestro archivo mediante la función ctypes.
-funcion_array=ctypes.CDLL(file) 
+suma_arreglos_enteros =ctypes.CDLL(file) 
 ```
 
 Definimos  los argumentos que tenemos en la funcion y tambien el tipo de arreglo c_int
 ```Python
 #En este caso podemos definir un nombre llamado sum_array que define el nombre donde se encuentra almacendo nuestro file .
-sum_array = funcion_array.sum_array
+sum_array = suma_arreglos_enteros.sum_array
 #Podemos definir los valores de entrada  con la función  argtypes tipo enteros
 sum_array.argtypes = [np.ctypeslib.ndpointer(dtype=np.intc),np.ctypeslib.ndpointer(dtype=np.intc),
 												np.ctypeslib.ndpointer(dtype=np.intc),ctypes.c_int]
@@ -557,7 +559,7 @@ file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 
 Después necesitamos  asignar un nombre para cargar nuestro archivo a ctypes de la siguiente manera , en ese caso asignamos con el nombre Array_string1 sin embargo puede cambiar su nombre.
 ```Python
-Array_string1 = ctypes.CDLL(file)  #carga la el archivo file  a ctypes.
+Generator_array = ctypes.CDLL(file)  #carga la el archivo file  a ctypes.
 
 ```
 
@@ -578,13 +580,13 @@ n = 100000000  #numeros enteros en el ciclo for para funcionar de manera optima 
 
 Podemos definir un conjunto de variables tipo flotantes de la siguiente manera;primero vamos asignar  la variable que carga nuestro archivo posteriormente vamos a indicar la función que vamos a tomar como en el ejemplo.
 ```Python
-Array_string1.array_float_string.argtypes = [ctypes.c_float, ctypes.c_float, ctypes.c_int]
+Generator_array.array_float_string.argtypes = [ctypes.c_float, ctypes.c_float, ctypes.c_int]
 
 ```
 
 Vamos a establecer el tipo de salida como variable  tipo float de  la siguiente manera, igual indicando con la función restype.
 ```Python
-Array_string1.array_float_string.restype = ctypes.POINTER(ctypes.c_float)#salida de nuestro arreglo 
+Generator_array.array_float_string.restype = ctypes.POINTER(ctypes.c_float)#salida de nuestro arreglo 
 #de numeros flotantes
  ``` 
 
@@ -596,7 +598,7 @@ def array_float_string(x0, xn, n):
 ```
 ```Python
 #Ahora bien podemos definir el arreglo de Array_sring1 y de la  función definida anteriormente.	
-arreglo = Array_string1.array_float_string(x0, xn, n)
+arreglo = Generaor_array.array_float_string(x0, xn, n)
 
 ```
 
