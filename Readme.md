@@ -121,6 +121,11 @@ return sum ;
  ```
 Ahora tenemos nuestro  codigo generado. podemos ingresar en la terminal  para encontrar nuestro archivo , ahora bien cuando sabemos que estamos en la dirección correcta, vamos a generar nuestro archivo.so  como ejemplo podemos ver la siguiente forma.
 podemos visualizar esta linea de comandos en la parte inferior  cuando ejecutamos un programa en el entorno visual estudio nosotros vamos a utilizar la parte donde dice terminal.
+## Generar el archivo .so a partir de un programa numeros_enteros.c
+
+Ahora bien podemos tener almacenado el valor de sum que nos ayuda para utilizarlo posteriormente en python.
+Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+
 
 
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
@@ -302,6 +307,11 @@ return sum ;
 }
 
  ```
+## Generar el archivo .so a partir de un programa suma_doubles.c
+
+Ahora bien podemos tener almacenado el valor de sum que nos ayuda para utilizarlo posteriormente en python.
+Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
@@ -431,6 +441,10 @@ return resultado[10]; // regresa el resulado de las iteraciones
 
 
 ```
+## Generar el archivo .so a partir de un programa suma_arreglos_enteros.c
+
+Ahora bien podemos tener almacenado el valor de resultado que nos ayuda para utilizarlo posteriormente en python.
+Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
 Despues de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
@@ -529,7 +543,14 @@ return x;
  
 
  ```
+## Generar el archivo .so a partir de un programa Generator_array.c
+
+Ahora bien podemos tener almacenado el valor de x que nos ayuda para utilizarlo posteriormente en python.
+Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+
+
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
+
 
 Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la terminal que se encuentra de la siguiente forma:
 ```Python
