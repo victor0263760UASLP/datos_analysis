@@ -118,7 +118,7 @@ podemos visualizar esta linea de comandos en la parte inferior  cuando ejecutamo
 ## Generar el archivo .so a partir de un programa numeros_enteros.c
 
 Ahora bien podemos tener almacenado el valor de sum que nos ayuda para utilizarlo posteriormente en python.
-Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 
 
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
@@ -127,7 +127,7 @@ Después de  guardar y ejecutar tu archivo  en c se debe generar.so en  la termi
 ```Python
 User :~/Path_to_your_files$ gcc- fPIC -shared -o  numerosenteros.so numerosenteros.c
 ```
-De esa manera podemos ver que nuestro archivo.so se generó y podemos pasar al suguiente paso, utilizar python para extraer los datos, lo cual podemos ver a continuación en el siguiente archivo.
+De esa manera podemos ver que nuestro archivo.so se generó y podemos pasar al siguiente paso, utilizar python para extraer los datos, lo cual podemos ver a continuación en el siguiente archivo.
 
 
 ## Archivo  sumaenteros.py
@@ -151,7 +151,7 @@ file = ("/pc/Desktop/carpeta/Archivo.so")  # Direction of the path.
 ```
 Asignamos un nombre aleatorio, en donde se pueda  definir  numerosenteros.
 
-Como en la siguiente asignación definiendo el file y añadiendo c.CDLL para  poder utilizar la funcion por medio de ctypes.
+Como en la siguiente asignación definiendo el file y añadiendo 	cl.CDLL para  poder utilizar la funcion por medio de ctypes.
 
 ```Python
 numerosenteros=cl.CDLL(file)
@@ -215,7 +215,7 @@ return sum ;
 ## Generar el archivo .so a partir de un programa suma_float.c
 
 Ahora bien podemos tener almacenado el valor de sum que nos ayuda para utilizarlo posteriormente en python.
-Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicacion de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+Podemos encontrar en la parte inferior de el entorno de visual studio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
@@ -228,7 +228,7 @@ Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  ut
 deacuerdo al siguiente código.
 
  ## Archivo  suma_float.py
- Ahora bien este archivo nos va ayudar para administrar  el programa que anteriormente realizamos en lenguaje  C , donde  se realizo una función para  obtener la suma de dos números flotantes, es ahora de llegar a administrarlo con python de la siguiente manera cargando el archivo.so de la dirección donde lo tenemos almacenado, para posteriormente asignar la función y el nombre que podemos elegir para nuestros datos y asi paso por paso llegar a obtener la suma de los dos numeros flotantes.
+Ahora bien este archivo nos va ayudar para administrar  el programa que anteriormente realizamos en lenguaje  C , donde  se realizo una función para  obtener la suma de dos números flotantes, es ahora de llegar a administrarlo con python de la siguiente manera cargando el archivo.so de la dirección donde lo tenemos almacenado, para posteriormente asignar la función y el nombre que podemos elegir para nuestros datos y asi paso por paso llegar a obtener la suma de los dos numeros flotantes.
 
 ```Python
 #Ahora vamos a necesitar un programa  que se llama suma_float.
@@ -245,7 +245,7 @@ a = 7.2200123  #Assigment of variable a
 b = 10.25225  #Assigment of  variable b.
 ``` 
 
-Vamos asignar una variable que nos permita extraer el archivo y asignar la función que deseamos sumar, ya que nos permitirá almacenar el valor de la funciòn que een este caso es suma.
+Vamos asignar una variable que nos permita extraer el archivo y asignar la función que deseamos sumar, ya que nos permitirá almacenar el valor de la funciòn que en este caso es suma.
 
 ```Python
 n_suma = funcion2_suma.suma    #n_suma funcion2_suma. 
