@@ -519,8 +519,8 @@ Generator_array = ctypes.CDLL(file)  #carga la el archivo file  a ctypes.
 
 ```
 Las variables que vamos asignar para el funcionamiento de nuestro programa se desarrollan de la siguiente manera aunque las variables pueden determinarse al inicio o al final de nuestro programa.
-Dentro de algunas recomendaciones podemos destacar el numero de iteraciones que  depende de la memoria del computador, en este caso se realizo la iteración y para que funcionara de manera optima llego hasta un maximo  de  100000000.
-Algunos ejemplos de asignación de valores  a las variables se pueden mostrar a coninuación.
+Dentro de algunas recomendaciones podemos destacar el numero de iteraciones que  depende de la memoria del computador, en este caso se realizo la iteración y para que funcionará de manera optima llego hasta un maximo  de  100000000.
+Algunos ejemplos de asignación de valores  a las variables se pueden mostrar a continuación.
 
 ```Python
 x0 = 1.512871423416543
@@ -547,12 +547,12 @@ def array_float_string(x0, xn, n):
 #Ahora bien podemos definir el arreglo de Array_sring1 y de la  función definida anteriormente.	
 arreglo = Generaor_array.array_float_string(x0, xn, n)
 ```
-Un paso muy importante es apoyarnos de la libreria de numpy  en donde definimos un nombre que defina las ieraciones de nuestros  arreglos.
+Un paso muy importante es apoyarnos de la libreria de numpy  en donde definimos un nombre que defina las iteraciónes de nuestros  arreglos.
 ```Python
 #utilizamos el arreglo de ctypes a numpy  que vaya iterando en el rango de (n+1)
 	convertir_arreglo= np.array([arreglo[i] for i in range(n+1)])
 ```
-De esta función vamos a realizar un return para posterormente utilizarla.
+De esta función vamos a realizar un return para posteriormente utilizarla.
 ```Python
 	#hacemos un return de la funcion 
 	return convertir_arreglo
@@ -562,15 +562,14 @@ Ahora vamos a definir la palabra que realizamos return como una función que con
 #convertirmos e imprimimos la función.
 convertir_arreglo = array_float_string(x0, xn, n)
 ```
-Por Último imprimimos convertir_arreglo y podemos definir  una cadena de  soluciones en un arreglo que va determinado por el rango que indicamos y el numero de iteraciónes.
+Por Último imprimimos convertir_arreglo y podemos definir  una cadena de  soluciónes en un arreglo que va determinado por el rango que indicamos y el número de iteraciónes.
 ```Python
 print( convertir_arreglo)
  
  ``` 
 ## Makefile 
 
-Para el caso del makefile tenemos que escribir el archivo de la siguiente forma para posteriormente. 
-Podemos indicar de manera formal que  nuestro archivo  se pueda generar de manera automatica de la siguiente manera.
+Para el caso del makefile tenemos que escribir el archivo de la siguiente forma para posteriormente,podemos indicar de manera formal que  nuestro archivo  se pueda generar de manera automatica de la siguiente manera.
 Eligiendo el tipo de compilador  que en nuestro caso es gcc por que va a tomar archivos tipo c.
 ```makefile 
 SHELL := /bin/bash
@@ -588,6 +587,7 @@ Por último limpia los archivos creados .o con la función rm y podemos abrirlo 
 clear:
 	rm funcion_array.o
 ```
+Para posteriormente ejectutar nuestro programa con la función cp  y en la terminal solo con la palabra Makefile toda la lista de comandos se puede ejecutar de manera automatica.
 ## Conclusión: 
 El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer los archivos de la dirección de tu programa  mencionando el tipo de documento realizando  un archivo compartido .so, de manera mas general,llegamos a  generar un archivo .c  que sume dos numeros de tipo float, int, double  y se puedan extraer con Python utilizando la biblioteca ctypes, además puedes hacer la suma de arreglos y llegar a generar un vector de arreglos definiendo un rango de iteraciones y todo ello se pudo abrir con Python  utilizando el archivo .so
 
