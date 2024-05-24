@@ -229,7 +229,7 @@ Para abrir nuestro archivo  de suma de dos numeros enteros  en c necesitamos  ut
 deacuerdo al siguiente código.
 
  ## Archivo  suma_float.py
-Ahora bien este archivo nos va ayudar para administrar  el programa que anteriormente realizamos en lenguaje  C , donde  se realizo una función para  obtener la suma de dos números flotantes, es ahora de llegar a administrarlo con python de la siguiente manera cargando el archivo.so de la dirección donde lo tenemos almacenado, para posteriormente asignar la función y el nombre que podemos elegir para nuestros datos y asi paso por paso llegar a obtener la suma de los dos numeros flotantes.
+Ahora bien este archivo nos va ayudar para administrar  el programa que anteriormente realizamos en lenguaje  C , donde  se realizó una función para  obtener la suma de dos números flotantes, es ahora de llegar a administrarlo con python de la siguiente manera cargando el archivo.so de la dirección donde lo tenemos almacenado, para posteriormente asignar la función y el nombre que podemos elegir para nuestros datos y así paso por paso llegar a obtener la suma de los dos numeros flotantes.
 
 ```Python
 #Ahora vamos a necesitar un programa  que se llama suma_float.
@@ -397,7 +397,7 @@ return resultado[10]; // regresa el resulado de las iteraciones
 ```
 ## Generar el archivo .so a partir de un programa suma_arreglos_enteros.c
 
-Ahora bien podemos tener almacenado el valor de resultado que nos ayuda para utilizarlo posteriormente en python.
+Ahora bién podemos tener almacenado el valor de resultado que nos ayuda para utilizarlo posteriormente en python.
 Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
@@ -597,7 +597,7 @@ Para posteriormente ejectutar nuestro programa con la función cp  y en la termi
 ## Conclusión: 
 El programa funcionara de manera óptima ,el gcc funcionara y podrás extraer los archivos de la dirección de tu programa  mencionando el tipo de documento realizando  un archivo compartido .so, de manera mas general,llegamos a  generar un archivo .c  que sume dos numeros de tipo float, int, double  y se puedan extraer con Python utilizando la biblioteca ctypes, además puedes hacer la suma de arreglos y llegar a generar un vector de arreglos definiendo un rango de iteraciónes y todo ello se pudo abrir con Python  utilizando el archivo .so.
 
-Nota* para el caso de hipervínculos en markdown  no se pudo con un solo click  que cada hipervínculo se abriera en otra pestaña  debido a la naturaleza de archivos.md por esa razon se  implementó una opción  dando click izquierdo en cada hipervínculo mostrara la opción para abrirlo, muestra opción como  open link in new tab, open link in new window y open link in incógnito window recomendamos open link in new tab.
+Nota* para el caso de hipervínculos en markdown  no se pudo con un solo click  que cada hipervínculo se abriera en otra pestaña  debido a la naturaleza de archivos.md por esa razón se  implementó una opción  dando click izquierdo en cada hipervínculo mostrara la opción para abrirlo, muestra opción como  open link in new tab, open link in new window y open link in incógnito window recomendamos open link in new tab.
 
 ## Fuentes consultadas: 
 
