@@ -268,7 +268,7 @@ print(n_suma(a,b))  #imprime la suma de los dos numeros de la funcion.
 
 ## Sumar dos numeros doubles(suma_doubles.c)
 Podemos considerar sumar dos numeros doubles , entonces relizamos una función  que nos permita obtener la suma, en este caso podemos implemntarlo en c, sumamos los dos valores  y después con un return almacenamos el valor generado que en este caso  se considera con la  variable sum.
-Tomamos en cuenta que  el programa en c va hacer quien va a realizar los calculos y python solo va adminstrar esos datos , entonces en este caso podemos encontrar que en c solo vamos a realizar la función, que podemos comenzar de la siguiente forma. 
+Tomamos en cuenta que  el programa en c va hacer quién va a realizar los calculos y python solo va adminstrar esos datos , entonces en este caso podemos encontrar que en c solo vamos a realizar la función, que podemos comenzar de la siguiente forma. 
 
 Ahora podemos hacer una función que nos ayude a obtener la suma de  2 números doubles; primero añadimos las bibliotecas. 
 ```c 
@@ -295,7 +295,7 @@ return sum ;
 ## Generar el archivo .so a partir de un programa suma_doubles.c
 
 Ahora bien podemos tener almacenado el valor de sum que nos ayuda para utilizarlo posteriormente en python.
-Podemos encontrar en la parte inferior de el entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opcion  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
+Podemos encontrar en la parte inferior del entorno de visual estudio las siguientes etiquetas en donde vamos a ingresar en la opción  de terminal para ingresar a la ubicación de nuestro archivo en c para posteriormente generar nuestro archivo gcc como podemos ver a continuación.
 
 PROBLEMS                    OUTPUT                    DEBUG CONSOLE                     TERMINAL                       PORTS
 
