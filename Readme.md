@@ -17,7 +17,7 @@ Una de las principales ventajas al utilizar es por su alta velocidad de ejecuci�
 
 ## Por qué python? 
 
-En cuanto a la flexibilidad de python es muy versátil y flexible gracias a su diseño lo cual es muy importante en ese desarrollo de programas en Python. 
+En cuanto a la flexibilidad de python es muy versátil y flexible gracias a su diseño lo cual es muy importante en el desarrollo de programas en Python. 
 
 ## Cómo comenzamos? 
 
