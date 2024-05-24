@@ -32,6 +32,7 @@ Después hacemos un programa en Python que pueda extraer el programa e imprimirl
 Las librerías para instalar cada uno de los paquetes podemos verlos de la siguiente manera, para instalar Python y las librerías para generar los archivos    ya que en la terminal solo admite instalar los programas con la palabra seudo seguido de la contraseña que nos permitió ingresar al programa. 
 
 Posteriormente se instalaran todos los paquetes correspondientes a la aplicación uno de los paquetes no se instala el programa de Python o c no funcionara. 
+
 Los Paths correspondientes se pueden consultan ingresando a la plataforma de Git Hub donde dependiendo de los requerimientos de tu equipo podrás consultarlos 
 e instalarlos con la palabra seudo dependiendo de los requerimientos necesarios en el programa de tu computadora, sin embargo en Visual Studio se encuentran muchas herramientas de compilación.
 
@@ -50,7 +51,7 @@ Después podemos generar un archivo .so e utilizarlo en Python para importarlo e
 
  
 
-Después puedes crear un Makefile que me pueda imprimir el archivo .so de manera que se genere la función array suma y también añadir el archivo .h de la librería de nuestra función en c. 
+Después puedes crear un Makefile que me pueda imprimir el archivo .so de manera que se generé la función array suma y también añadir el archivo .h de la librería de nuestra función en c. 
 
 
 ## Creación de Archivo .so porque es muy importante? 
