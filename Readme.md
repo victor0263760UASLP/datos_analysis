@@ -551,7 +551,7 @@ def array_float_string(x0, xn, n):
 ```
 ```Python
 #Ahora bien podemos definir el arreglo de Array_sring1 y de la  función definida anteriormente.	
-arreglo = Generaor_array.array_float_string(x0, xn, n)
+arreglo = Generator_array.array_float_string(x0, xn, n)
 ```
 Un paso muy importante es apoyarnos de la libreria de numpy  en donde definimos un nombre que defina las iteraciónes de nuestros  arreglos.
 ```Python
