@@ -160,7 +160,7 @@ numerosenteros=cl.CDLL(file)
 ```
 #En el script python definimos el valor de nuestras variables.
 
-#Como en el siguiente ejemplo para la suma de dos numeros enteros asiganmos un valor  tipo entero de la siguiente manera  en este caso podemos asignar un nombre a  cada una de las variables, en este caso las seleccionamos como a y b.
+#Cómo en el siguiente ejemplo para la suma de dos numeros enteros asiganmos un valor  tipo entero de la siguiente manera  en este caso podemos asignar un nombre a  cada una de las variables, en este caso las seleccionamos como a y b.
 ```Python
 
 a = 8 #Assigment of variable a
